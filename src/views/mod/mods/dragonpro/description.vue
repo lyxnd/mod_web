@@ -66,8 +66,13 @@
         <h4>Summon Table:</h4>
         By putting a stone,it will summon the boss it refers to and destroy itself.
         <h4>Fusion Table:</h4>
-        in this table, you are able to smelt the tools,equipments into materials and upgrade the custom ingot and smelt the common items.
-
+        in this table, you are able to smelt the tools,equipments into materials and smelt the common items with faster speed.
+        <h4>Lottery Table</h4>
+        with sweepstakes in hand, you are able to get an item randomly by right clicking the table
+        <h4>Dragon Call</h4>
+        break the block with pickaxe, you are able to get an item randomly
+        <h4>Monster Spawner</h4>
+        a limitless spawner that can spawn mobs without any restriction
       </div>
       <el-divider>
         <el-icon><star-filled /></el-icon>
@@ -76,12 +81,14 @@
       <div id="additional">
         <h3>5. Chain Break:</h3>
         <div class="imgContainer"><img src="/src/assets/chainbreak.png" class="imgs"></div>
+        <br>
         as it's name Chain break,and press 'N' you can adjust the parameters,shapes and max break count
 
         <h3>6. Dream Dimensions:</h3>
-        Two dimensions,which is totally the same as overworld,only when you right click the bed that you will have the chance to enter these dimensions,
-        just like you dream while sleeping sometimes.In these dimensions,there will be a timer for you,and you'll wake up when it run out of count,
-        and if you dead in the dimension,you will be given a nightmare effect,which will decline your max health and prohibit you sleeping for a while.
+        Two dimensions,one is totally the same as overworld, another is a mess world , only when you right click the bed that you will have the chance to enter these dimensions,
+        just like you dream while sleeping sometimes.In these dimensions,there will be a timer for you,and you'll wake up when it run out of count or dead,and before you enter the dimension you will be given some items
+        that will be removed before you leave,and remove some items that will given back as well.
+        and if you dead in the dimension,you will be given a nightmare effect,which will decline your max health and prohibit you sleeping for a while and you may lose all your staffs
 
         <h3>7. Moon Event:</h3>
         <h3>intro: This event will happen according to the days and have eight types:</h3>

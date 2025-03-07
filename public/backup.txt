@@ -1,0 +1,62 @@
+[
+  {
+    "fusion": {
+      "name": "fusion",
+      "icon": "/assets/icon/block/fusion.png",
+      "usage": "noop",
+      "approach": "noop",
+      "additional": "noop",
+      "additionalImg": [
+        "/assets/icon/block/fusion_add0.png"
+      ]
+    }
+  },
+  {
+    "summon_block": {
+      "usage": "summon_block",
+      "additional": "summon_block",
+      "name": "summon_block",
+      "icon": "/assets/icon/block/summon_block.png",
+      "approach": "summon_block",
+      "additionalImg": [
+        "/assets/icon/block/summon_block_add0.png"
+      ]
+    }
+  },
+  {
+    "dragon_block": {
+      "usage": "some kind of luck block(random loot)",
+      "additional": "no trick",
+      "name": "dragon_block",
+      "icon": "/assets/icon/block/dragon_block.png",
+      "approach": "craftable",
+      "additionalImg": [
+        "/assets/icon/block/dragon_block_add0.png"
+      ]
+    }
+  },
+  {
+    "lottery_block": {
+      "usage": "use with sweepstaks to get a random gift",
+      "additional": "maybe a talisman",
+      "name": "lottery_block",
+      "icon": "/assets/icon/block/lottery_block.png",
+      "approach": "",
+      "additionalImg": [
+        "/assets/icon/block/lottery_block_add0.png"
+      ]
+    }
+  },
+  {
+    "spawner_block": {
+      "usage": "better or limitless spawner",
+      "additional": "have max spawn count (36 or 40)",
+      "name": "spawner_block",
+      "icon": "/assets/icon/block/spawner_block.png",
+      "approach": "no way to have one",
+      "additionalImg": [
+        "/assets/icon/block/spawner_block_add0.png"
+      ]
+    }
+  }
+]

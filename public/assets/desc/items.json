@@ -1,0 +1,571 @@
+[
+  {
+    "mouse": {
+      "name": "mouse",
+      "icon": "/assets/icon/item/mouse.png",
+      "approach": "kill Shendu",
+      "usage": "transform silent into active,and active into silent",
+      "sneak": "",
+      "erupt": "Area transform",
+      "attribute": "empty",
+      "additional": "pay attention",
+      "additionalImg": [
+      ]
+    }
+  },
+  {
+    "ox": {
+      "name": "ox",
+      "icon": "/assets/icon/item/ox.png",
+      "approach": "kill Shendu",
+      "usage": "Give you undefeated power",
+      "sneak": "",
+      "erupt": "High level",
+      "attribute": "empty",
+      "additional": "pay attention",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "tiger": {
+      "name": "tiger",
+      "icon": "/assets/icon/item/tiger.png",
+      "approach": "tiger",
+      "usage": "tiger",
+      "sneak": "tiger",
+      "erupt": "tiger",
+      "attribute": "tiger",
+      "additional": "tiger",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "rabbit": {
+      "name": "rabbit",
+      "icon": "/assets/icon/item/rabbit.png",
+      "usage": "jump higher, run faster",
+      "approach": "can be found in chest in some structures ",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "higher level",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "dragon": {
+      "name": "dragon",
+      "icon": "/assets/icon/item/dragon.png",
+      "usage": "angry fire burn everything",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "keep in mind everything includes yourself as well",
+      "sneak": "",
+      "erupt": "stronger power",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "snake": {
+      "name": "snake",
+      "icon": "/assets/icon/item/snake.png",
+      "usage": "make you invisible",
+      "approach": "can be found in chest in some structures",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "mobs within 8 blocks won't attack you(perhaps)",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "horse": {
+      "name": "horse",
+      "icon": "/assets/icon/item/horse.png",
+      "usage": "heal yourself",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "heal more and remove harmful effect",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "sheep": {
+      "name": "sheep",
+      "icon": "/assets/icon/item/sheep.png",
+      "usage": "back to position",
+      "approach": "free the end",
+      "attribute": "",
+      "additional": "",
+      "sneak": "exchange pos after tp",
+      "erupt": "ghost out of body",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "monkey": {
+      "name": "monkey",
+      "icon": "/assets/icon/item/monkey.png",
+      "usage": "transform mob into another one",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "area transformation",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "chicken": {
+      "name": "chicken",
+      "icon": "/assets/icon/item/chicken.png",
+      "usage": "fly skill",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "make livings around flowing",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "dog": {
+      "name": "dog",
+      "icon": "/assets/icon/item/dog.png",
+      "usage": "give you regernation",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "flower grace, long life",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "pig": {
+      "name": "pig",
+      "icon": "/assets/icon/item/pig.png",
+      "usage": "blasting eyes",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "real blasting eyes",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "golden_egg": {
+      "name": "golden_egg",
+      "icon": "/assets/icon/item/golden_egg.png",
+      "usage": "some kind of food with eurpt effect",
+      "approach": "can be found in chest in some structures",
+      "attribute": "",
+      "additional": "nice food, eat as much as you can",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "xp_pool": {
+      "name": "xp_pool",
+      "icon": "/assets/icon/item/xp_pool.png",
+      "usage": "store xp and take out",
+      "approach": "can only be found in ghost tower",
+      "attribute": "unbreakable but not fire Immune",
+      "additional": "sometimes can even increase xp and boost xp drop when in hand and enchanted by xp boost",
+      "sneak": "",
+      "erupt": "summon xp entity to drag all creature closer",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "buddha_palm_technique": {
+      "name": "buddha_palm_technique",
+      "icon": "/assets/icon/item/buddha_palm_technique.png",
+      "usage": "'summon' buddha_palm_technique",
+      "approach": "can be found in chest in some structures",
+      "attribute": "",
+      "additional": "be careful to usage",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "bony_spur": {
+      "name": "bony_spur",
+      "icon": "/assets/icon/item/bony_spur.png",
+      "usage": "apply effect while have potion in offhand",
+      "approach": "can only be found in ghost tower",
+      "attribute": "increase attack damage after kill mobs",
+      "additional": "real increase?",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "oxhead_axe": {
+      "name": "oxhead_axe",
+      "icon": "/assets/icon/item/oxhead_axe.png",
+      "usage": "push away nearby mobs",
+      "approach": "can only be found in ghost tower",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "dart": {
+      "name": "dart",
+      "icon": "/assets/icon/item/dart.png",
+      "usage": "throw dart",
+      "approach": "craftable and in chest",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "dragon_bow": {
+      "name": "dragon_bow",
+      "icon": "/assets/icon/item/dragon_bow.png",
+      "usage": "",
+      "approach": "can only be found in ghost tower",
+      "attribute": "arrow will be faster",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "sweepstakes": {
+      "name": "sweepstakes",
+      "icon": "/assets/icon/item/sweepstakes.png",
+      "usage": "use on lottery block to get a gift",
+      "approach": "craftable and chest",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "fire_origin_stone": {
+      "name": "fire_origin_stone",
+      "icon": "/assets/icon/item/fire_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "water_origin_stone": {
+      "name": "water_origin_stone",
+      "icon": "/assets/icon/item/water_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill baitza",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "wind_origin_stone": {
+      "name": "wind_origin_stone",
+      "icon": "/assets/icon/item/wind_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill xiaofung",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "sky_origin_stone": {
+      "name": "sky_origin_stone",
+      "icon": "/assets/icon/item/sky_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill hsiwu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "mountain_origin_stone": {
+      "name": "mountain_origin_stone",
+      "icon": "/assets/icon/item/mountain_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill pokong",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "ground_origin_stone": {
+      "name": "ground_origin_stone",
+      "icon": "/assets/icon/item/ground_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill daigui",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "gravity_origin_stone": {
+      "name": "gravity_origin_stone",
+      "icon": "/assets/icon/item/gravity_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill tsolan",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "lighting_origin_stone": {
+      "name": "lighting_origin_stone",
+      "icon": "/assets/icon/item/lighting_origin_stone.png",
+      "usage": "(in hand chain)",
+      "approach": "kill tchangzu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "fire_stick": {
+      "name": "fire_stick",
+      "icon": "/assets/icon/item/fire_stick.png",
+      "usage": "",
+      "approach": "kill shendu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "water_stick": {
+      "name": "water_stick",
+      "icon": "/assets/icon/item/water_stick.png",
+      "usage": "",
+      "approach": "kill baitza",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "wind_stick": {
+      "name": "wind_stick",
+      "icon": "/assets/icon/item/wind_stick.png",
+      "usage": "",
+      "approach": "kill xiaofung",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "sky_stick": {
+      "name": "sky_stick",
+      "icon": "/assets/icon/item/sky_stick.png",
+      "usage": "",
+      "approach": "kill hsiwu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "ground_stick": {
+      "name": "ground_stick",
+      "icon": "/assets/icon/item/ground_stick.png",
+      "usage": "",
+      "approach": "kill daigua",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "mountain_stick": {
+      "name": "mountain_stick",
+      "icon": "/assets/icon/item/mountain_stick.png",
+      "usage": "",
+      "approach": "kill pokong",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "gravity_stick": {
+      "name": "gravity_stick",
+      "icon": "/assets/icon/item/gravity_stick.png",
+      "usage": "",
+      "approach": "kill tsolan",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "lighting_stick": {
+      "name": "lighting_stick",
+      "icon": "/assets/icon/item/lighting_stick.png",
+      "usage": "",
+      "approach": "kill tchangzu",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "hand_chain": {
+      "name": "hand_chain",
+      "icon": "/assets/icon/item/hand_chain.png",
+      "usage": "use devils power if you have their stone",
+      "approach": "",
+      "attribute": "",
+      "additional": "press b to choose first",
+      "sneak": "accroding to the stone you choose",
+      "erupt": "accroding to the stone you choose",
+      "additionalImg": [
+
+      ]
+    }
+  },
+  {
+    "talisman_pocket": {
+      "name": "talisman_pocket",
+      "icon": "/assets/icon/item/talisman_pocket.png",
+      "usage": "use to equip",
+      "approach": "",
+      "attribute": "",
+      "additional": "be careful about balance; will enhance your power with talisman inserted",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": [
+
+      ]
+    }
+  }
+]

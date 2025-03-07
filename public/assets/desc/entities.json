@@ -1,0 +1,159 @@
+[
+  {
+    "Shen du": {
+      "name": "Shen Du",
+      "icon": "/assets/icon/entity/shendu.png",
+      "max_hp": "1000",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "the most evil dragon ever,burning everything on his way,and those protestors",
+      "attack_damage": "15",
+      "skill": [
+        "freeze all livings nearby",
+        "freeze all livings nearby"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/shendu.png",
+        "/assets/icon/entity/shendu_0.png",
+        "/assets/icon/entity/shendu_1.png",
+        "/assets/icon/entity/shendu_2.png",
+        "/assets/icon/entity/shendu_3.png",
+        "/assets/icon/entity/shendu_4.png"
+      ]
+    }
+  },
+  {
+    "Bai Tza": {
+      "name": "Bai Tza",
+      "icon": "/assets/icon/entity/baitza.png",
+      "max_hp": "700",
+      "speed": "0.4",
+      "armor": "6",
+      "description": "a smart but disgusting snake,dry lands will be her dead scene.",
+      "attack_damage": "15",
+      "skill": [
+        "absort water around to heal self"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/baitza.png",
+        "/assets/icon/entity/baitza_0.png"
+      ]
+    }
+  },
+  {
+    "Xiao fung": {
+      "name": "Xiao Fung",
+      "icon": "/assets/icon/entity/xiaofung.png",
+      "max_hp": "900",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "control qi to attack and fly, unreachable",
+      "attack_damage": "15",
+      "skill": [
+        "absort qi around to heal self"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/xiaofung.png",
+        "/assets/icon/entity/xiaofung_0.png"
+      ]
+    }
+  },
+  {
+    "Hsiwu": {
+      "name": "Hsiwu",
+      "icon": "/assets/icon/entity/hsiwu.png",
+      "max_hp": "600",
+      "speed": "1",
+      "armor": "5",
+      "description": "sky and the sun, which creatures live on,will gobble them all up",
+      "attack_damage": "8",
+      "skill": [
+        "connect world with hell,bring all monsters to land"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/hsiwu.png",
+        "/assets/icon/entity/hsiwu_0.png"
+      ]
+    }
+  },
+  {
+    "Pokong": {
+      "name": "Pokong",
+      "icon": "/assets/icon/entity/pokong.png",
+      "max_hp": "1200",
+      "speed": "0.18",
+      "armor": "40",
+      "description": "most toughest,can absort all damage into piece of cake",
+      "attack_damage": "12",
+      "skill": [
+        "absort blocks nearby into his body and make himself more tough"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/pokong.png",
+        "/assets/icon/entity/pokong_0.png"
+      ]
+    }
+  },
+  {
+    "Dai Gui": {
+      "name": "Dai Gui",
+      "icon": "/assets/icon/entity/daigui.png",
+      "max_hp": "1000",
+      "speed": "0.28",
+      "armor": "12",
+      "description": "living underground without light makes him very furious",
+      "attack_damage": "15",
+      "skill": [
+        "summon stone gland to break the land"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/daigui.png",
+        "/assets/icon/entity/daigui_0.png"
+      ]
+    }
+  },
+  {
+    "Tsolan": {
+      "name": "Tsolan",
+      "icon": "/assets/icon/entity/tsolan.png",
+      "max_hp": "700",
+      "speed": "0.6",
+      "armor": "8",
+      "description": "the oldest man living alone the world,how he finally become a monster?",
+      "attack_damage": "10",
+      "skill": [
+        "summon gravity ball to attack"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/tsolan.png",
+        "/assets/icon/entity/tsolan_0.png"
+      ]
+    }
+  },
+  {
+    "Tchangzu": {
+      "name": "Tchangzu",
+      "icon": "/assets/icon/entity/tchangzu.png",
+      "max_hp": "900",
+      "speed": "0.28",
+      "armor": "9",
+      "description": "murder,destroy all the bad things is relative to him,the arrogant devil ever,should be punished long before. ",
+      "attack_damage": "15",
+      "skill": [
+        "summon lighting ball to attack"
+      ],
+      "additional": "noop",
+      "images": [
+        "/assets/icon/entity/tchangzu.png",
+        "/assets/icon/entity/tchangzu_0.png"
+      ]
+    }
+  }
+]

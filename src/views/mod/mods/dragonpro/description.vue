@@ -1,6 +1,6 @@
 <template>
   <div class="description-wrapper">
-    <h1>Description</h1>
+    <h1 style="color: black;font-weight: bold">Description</h1>
     <el-tabs type="border-card" style="background: transparent;position: relative;">
       <el-tab-pane label="Items" class="tab-pane"><Items/></el-tab-pane>
       <el-tab-pane label="Blocks" class="tab-pane"><Blocks/></el-tab-pane>

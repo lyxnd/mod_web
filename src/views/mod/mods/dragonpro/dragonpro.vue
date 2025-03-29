@@ -73,10 +73,10 @@ export default {
       this.showChooser=true;
     },
     donate() {
-      alert('donate');
+      window.location.href = 'https://afdian.com/a/EzAiSteve';
     },
     download: function () {
-      window.location.href = 'https://example.com'; //TODO
+      window.location.href = 'https://www.curseforge.com/minecraft/mc-mods/shadowdragon';
     },
   }
 }

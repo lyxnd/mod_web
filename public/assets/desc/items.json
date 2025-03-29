@@ -4,11 +4,11 @@
       "name": "mouse",
       "icon": "/assets/icon/item/mouse.png",
       "approach": "kill Shendu",
-      "usage": "transform silent into active,and active into silent",
-      "sneak": "",
-      "erupt": "Area transform",
-      "attribute": "empty",
-      "additional": "pay attention",
+      "usage": "transform silence into active,and active into silence(which means freeze mob and transform block into an entity)",
+      "sneak": "(In Talisman Pocket)freeze effect immune and have chance to freeze attacker",
+      "erupt": "Area transform(all mobs freeze and block back to block)",
+      "attribute": "",
+      "additional": "during block transformation there will be drops; and some powerful mob cannot be frozen",
       "additionalImg": [
       ]
     }
@@ -18,11 +18,11 @@
       "name": "ox",
       "icon": "/assets/icon/item/ox.png",
       "approach": "kill Shendu",
-      "usage": "Give you undefeated power",
-      "sneak": "",
-      "erupt": "High level",
-      "attribute": "empty",
-      "additional": "pay attention",
+      "usage": "Give you undefeated power and mining speed",
+      "sneak": "(In Talisman Pocket)almost infinite strength and haste effect",
+      "erupt": "High level strength and mining speed",
+      "attribute": "",
+      "additional": "really powerful",
       "additionalImg": [
 
       ]
@@ -32,12 +32,12 @@
     "tiger": {
       "name": "tiger",
       "icon": "/assets/icon/item/tiger.png",
-      "approach": "tiger",
-      "usage": "tiger",
-      "sneak": "tiger",
-      "erupt": "tiger",
-      "attribute": "tiger",
-      "additional": "tiger",
+      "approach": "kill shendu",
+      "usage": "boost xp and make livings aggressive or peaceful",
+      "sneak": "(In Talisman Pocket)balance twelve talismans power",
+      "erupt": "boost xp more",
+      "attribute": "",
+      "additional": "who will need this to survive?",
       "additionalImg": [
 
       ]
@@ -48,10 +48,10 @@
       "name": "rabbit",
       "icon": "/assets/icon/item/rabbit.png",
       "usage": "jump higher, run faster",
-      "approach": "can be found in chest in some structures ",
+      "approach": "can be found in chest in some structures",
       "attribute": "",
       "additional": "",
-      "sneak": "",
+      "sneak": "(In Talisman Pocket)infinite speed and jump effect",
       "erupt": "higher level",
       "additionalImg": [
 
@@ -62,11 +62,11 @@
     "dragon": {
       "name": "dragon",
       "icon": "/assets/icon/item/dragon.png",
-      "usage": "angry fire burn everything",
+      "usage": "angry fire burns everything",
       "approach": "kill shendu",
       "attribute": "",
-      "additional": "keep in mind everything includes yourself as well",
-      "sneak": "",
+      "additional": "keep in mind everything includes yourself as well,maybe there is a way to cancel that fire(hold ice in offhand)",
+      "sneak": "(In Talisman Pocket)enhance pig talisman function",
       "erupt": "stronger power",
       "additionalImg": [
 
@@ -80,9 +80,9 @@
       "usage": "make you invisible",
       "approach": "can be found in chest in some structures",
       "attribute": "",
-      "additional": "",
-      "sneak": "",
-      "erupt": "mobs within 8 blocks won't attack you(perhaps)",
+      "additional": "is this a little bit imbalance(In Talisman Pocket)",
+      "sneak": "(In Talisman Pocket)invisible and mobs within 8 blocks won't attack you(perhaps)",
+      "erupt": "",
       "additionalImg": [
 
       ]
@@ -96,7 +96,7 @@
       "approach": "kill shendu",
       "attribute": "",
       "additional": "",
-      "sneak": "",
+      "sneak": "(In Talisman Pocket)immune to all harmful effect",
       "erupt": "heal more and remove harmful effect",
       "additionalImg": [
 
@@ -110,9 +110,9 @@
       "usage": "back to position",
       "approach": "free the end",
       "attribute": "",
-      "additional": "",
-      "sneak": "exchange pos after tp",
-      "erupt": "ghost out of body",
+      "additional": "press . to save position",
+      "sneak": "exchange pos after tp;(In Talisman Pocket)...",
+      "erupt": "ghost out of body and teleport back while sneaking(without dimension limit)",
       "additionalImg": [
 
       ]
@@ -126,8 +126,8 @@
       "approach": "kill shendu",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "area transformation",
+      "sneak": "(In Talisman Pocket)have change to transform attacker into another mob",
+      "erupt": "area transformation(into iron golem)",
       "additionalImg": [
 
       ]
@@ -137,12 +137,12 @@
     "chicken": {
       "name": "chicken",
       "icon": "/assets/icon/item/chicken.png",
-      "usage": "fly skill",
+      "usage": "flow up,but not flying ability",
       "approach": "kill shendu",
       "attribute": "",
-      "additional": "",
-      "sneak": "",
-      "erupt": "make livings around flowing",
+      "additional": "with some kind of speed may give fly ability",
+      "sneak": "(In Talisman Pocket)allow flying",
+      "erupt": "make locked mob flowing ",
       "additionalImg": [
 
       ]
@@ -152,12 +152,12 @@
     "dog": {
       "name": "dog",
       "icon": "/assets/icon/item/dog.png",
-      "usage": "give you regernation",
+      "usage": "give you regeneration and absorption effect",
       "approach": "kill shendu",
       "attribute": "",
-      "additional": "",
-      "sneak": "",
-      "erupt": "flower grace, long life",
+      "additional": "best survive tool",
+      "sneak": "(In Talisman Pocket)infinite resistance and regeneration effect",
+      "erupt": "flower grace, long life you are",
       "additionalImg": [
 
       ]
@@ -167,12 +167,12 @@
     "pig": {
       "name": "pig",
       "icon": "/assets/icon/item/pig.png",
-      "usage": "blasting eyes",
+      "usage": "blasting eyes, break blocks and damage mobs",
       "approach": "kill shendu",
       "attribute": "",
-      "additional": "",
-      "sneak": "",
-      "erupt": "real blasting eyes",
+      "additional": "laser maybe not rendered correctly,pardon",
+      "sneak": "(In Talisman Pocket)smelt the block you are mining",
+      "erupt": "real blasting eyes, break blocks and damage mobs in line ",
       "additionalImg": [
 
       ]
@@ -198,7 +198,7 @@
       "name": "xp_pool",
       "icon": "/assets/icon/item/xp_pool.png",
       "usage": "store xp and take out",
-      "approach": "can only be found in ghost tower",
+      "approach": "can only be found in ghost tower or in a maze",
       "attribute": "unbreakable but not fire Immune",
       "additional": "sometimes can even increase xp and boost xp drop when in hand and enchanted by xp boost",
       "sneak": "",
@@ -212,10 +212,10 @@
     "buddha_palm_technique": {
       "name": "buddha_palm_technique",
       "icon": "/assets/icon/item/buddha_palm_technique.png",
-      "usage": "'summon' buddha_palm_technique",
+      "usage": "'summon' buddha_palm_technique(huge hand)",
       "approach": "can be found in chest in some structures",
       "attribute": "",
-      "additional": "be careful to usage",
+      "additional": "be careful to use(do you want to kill all mobs under the hand?)",
       "sneak": "",
       "erupt": "",
       "additionalImg": [
@@ -227,10 +227,10 @@
     "bony_spur": {
       "name": "bony_spur",
       "icon": "/assets/icon/item/bony_spur.png",
-      "usage": "apply effect while have potion in offhand",
-      "approach": "can only be found in ghost tower",
+      "usage": "apply effect after using while have potion in offhand",
+      "approach": "can only be found in ghost tower or in maze",
       "attribute": "increase attack damage after kill mobs",
-      "additional": "real increase?",
+      "additional": "real increase?(y=ln(x+1)+20+2,x>500)(y=0.04x+2,x<=500)",
       "sneak": "",
       "erupt": "",
       "additionalImg": [
@@ -243,8 +243,8 @@
       "name": "oxhead_axe",
       "icon": "/assets/icon/item/oxhead_axe.png",
       "usage": "push away nearby mobs",
-      "approach": "can only be found in ghost tower",
-      "attribute": "",
+      "approach": "kill oxhead",
+      "attribute": "high damage,faster attack speed",
       "additional": "",
       "sneak": "",
       "erupt": "",
@@ -260,7 +260,7 @@
       "usage": "throw dart",
       "approach": "craftable and in chest",
       "attribute": "",
-      "additional": "",
+      "additional": "very useful and easy to craft",
       "sneak": "",
       "erupt": "",
       "additionalImg": [
@@ -272,8 +272,8 @@
     "dragon_bow": {
       "name": "dragon_bow",
       "icon": "/assets/icon/item/dragon_bow.png",
-      "usage": "",
-      "approach": "can only be found in ghost tower",
+      "usage": "more damage with faster arrow",
+      "approach": "can only be found in ghost tower or in maze",
       "attribute": "arrow will be faster",
       "additional": "",
       "sneak": "",
@@ -290,7 +290,7 @@
       "usage": "use on lottery block to get a gift",
       "approach": "craftable and chest",
       "attribute": "",
-      "additional": "",
+      "additional": "even talisman could be a gift",
       "sneak": "",
       "erupt": "",
       "additionalImg": [
@@ -306,8 +306,8 @@
       "approach": "kill shendu",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "fire resistance",
+      "erupt": "absort nearby fire and lava",
       "additionalImg": [
 
       ]
@@ -317,12 +317,12 @@
     "water_origin_stone": {
       "name": "water_origin_stone",
       "icon": "/assets/icon/item/water_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "summon a still water block(in hand chain)",
       "approach": "kill baitza",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "allow you breath in water",
+      "erupt": "absort nearby water",
       "additionalImg": [
 
       ]
@@ -332,12 +332,12 @@
     "wind_origin_stone": {
       "name": "wind_origin_stone",
       "icon": "/assets/icon/item/wind_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "push away nearby mobs(in hand chain)",
       "approach": "kill xiaofung",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "drag closer nearby mobs",
+      "erupt": "summon tornado",
       "additionalImg": [
 
       ]
@@ -347,11 +347,11 @@
     "sky_origin_stone": {
       "name": "sky_origin_stone",
       "icon": "/assets/icon/item/sky_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "give you motion(in hand chain)",
       "approach": "kill hsiwu",
       "attribute": "",
       "additional": "",
-      "sneak": "",
+      "sneak": "give you flying effect for 90 seconds but has 60s cooldown",
       "erupt": "",
       "additionalImg": [
 
@@ -362,12 +362,12 @@
     "mountain_origin_stone": {
       "name": "mountain_origin_stone",
       "icon": "/assets/icon/item/mountain_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "allow you walk in the air(in hand chain)",
       "approach": "kill pokong",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "apply falling protection to yourself",
+      "erupt": "give you mountain grace",
       "additionalImg": [
 
       ]
@@ -377,12 +377,12 @@
     "ground_origin_stone": {
       "name": "ground_origin_stone",
       "icon": "/assets/icon/item/ground_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "break blocks in line(in hand chain)",
       "approach": "kill daigui",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "give you press protection",
+      "erupt": "moving in the earth(press shift to go down)(sometimes it won't work as wished)",
       "additionalImg": [
 
       ]
@@ -392,12 +392,12 @@
     "gravity_origin_stone": {
       "name": "gravity_origin_stone",
       "icon": "/assets/icon/item/gravity_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "control other mobs' position as you want(in hand chain)",
       "approach": "kill tsolan",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "make you have or remove your gravity",
+      "erupt": "change moon phase to release devil qi",
       "additionalImg": [
 
       ]
@@ -407,12 +407,12 @@
     "lighting_origin_stone": {
       "name": "lighting_origin_stone",
       "icon": "/assets/icon/item/lighting_origin_stone.png",
-      "usage": "(in hand chain)",
+      "usage": "straight lighting attack(in hand chain)",
       "approach": "kill tchangzu",
       "attribute": "",
       "additional": "",
-      "sneak": "",
-      "erupt": "",
+      "sneak": "apply paralysis effect to nearby mobs and some damage as well",
+      "erupt": "give you lei grace(will attack nearby mobs with lighting)",
       "additionalImg": [
 
       ]
@@ -422,12 +422,12 @@
     "fire_stick": {
       "name": "fire_stick",
       "icon": "/assets/icon/item/fire_stick.png",
-      "usage": "",
+      "usage": "shoot fire ball",
       "approach": "kill shendu",
       "attribute": "",
-      "additional": "",
+      "additional": "this probably is not a weapon",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged fire ball(more flames)",
       "additionalImg": [
 
       ]
@@ -437,12 +437,12 @@
     "water_stick": {
       "name": "water_stick",
       "icon": "/assets/icon/item/water_stick.png",
-      "usage": "",
+      "usage": "shoot ice gland(area slowness)",
       "approach": "kill baitza",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged ice gland(area freeze)",
       "additionalImg": [
 
       ]
@@ -452,12 +452,12 @@
     "wind_stick": {
       "name": "wind_stick",
       "icon": "/assets/icon/item/wind_stick.png",
-      "usage": "",
+      "usage": "shoot wind ball(blow nearby mob up)",
       "approach": "kill xiaofung",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged wind ball(spawn tornado)",
       "additionalImg": [
 
       ]
@@ -467,12 +467,12 @@
     "sky_stick": {
       "name": "sky_stick",
       "icon": "/assets/icon/item/sky_stick.png",
-      "usage": "",
+      "usage": "call for sky grace(spawn random mobs)",
       "approach": "kill hsiwu",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "call for real sky grace(only spawn iron golem)",
       "additionalImg": [
 
       ]
@@ -482,12 +482,12 @@
     "ground_stick": {
       "name": "ground_stick",
       "icon": "/assets/icon/item/ground_stick.png",
-      "usage": "",
+      "usage": "shoot stone gland(dig hole in random shape)(no drops)",
       "approach": "kill daigua",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged stone gland(dig hole at a certain shape)(have drops)",
       "additionalImg": [
 
       ]
@@ -497,12 +497,12 @@
     "mountain_stick": {
       "name": "mountain_stick",
       "icon": "/assets/icon/item/mountain_stick.png",
-      "usage": "",
+      "usage": "form a small mountain at random shape",
       "approach": "kill pokong",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "fill hole",
       "additionalImg": [
 
       ]
@@ -512,12 +512,12 @@
     "gravity_stick": {
       "name": "gravity_stick",
       "icon": "/assets/icon/item/gravity_stick.png",
-      "usage": "",
+      "usage": "shoot gravity ball(flow up nearby mobs)(hit mob will lose/have gravity)",
       "approach": "kill tsolan",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged gravity ball(apply gravity plus effect to nearby mobs)",
       "additionalImg": [
 
       ]
@@ -527,12 +527,12 @@
     "lighting_stick": {
       "name": "lighting_stick",
       "icon": "/assets/icon/item/lighting_stick.png",
-      "usage": "",
+      "usage": "shoot lighting ball(spawn lighting on hit pos)",
       "approach": "kill tchangzu",
       "attribute": "",
       "additional": "",
       "sneak": "",
-      "erupt": "",
+      "erupt": "shoot charged lighting ball(spawn lighting on hit pos and nearby mobs)",
       "additionalImg": [
 
       ]
@@ -557,10 +557,10 @@
     "talisman_pocket": {
       "name": "talisman_pocket",
       "icon": "/assets/icon/item/talisman_pocket.png",
-      "usage": "use to equip",
-      "approach": "",
+      "usage": "use to equip,will enhance your power with talisman inserted",
+      "approach": "kill shendu",
       "attribute": "",
-      "additional": "be careful about balance; will enhance your power with talisman inserted",
+      "additional": "be careful about balance;",
       "sneak": "",
       "erupt": "",
       "additionalImg": [

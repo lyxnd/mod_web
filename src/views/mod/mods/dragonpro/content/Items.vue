@@ -63,15 +63,10 @@ const fetchData = async () => {
         additionalImg: item[key].AdditionalImg || item[key].additionalImg
       };
     });
-    updateParentData();
+    // updateParentData();
   } catch (error) {
     console.error("加载 JSON 失败:", error);
   }
-};
-const emit = defineEmits(['updateData']);
-
-const updateParentData = () => {
-  emit('updateData', itemProperty.value);
 };
 onMounted(fetchData);
 </script>

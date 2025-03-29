@@ -25,30 +25,6 @@
     }
   },
   {
-    "dodge_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "dodge_enchantment",
-      "approach": "enchant table"
-    }
-  },
-  {
-    "confuse_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "confuse_enchantment",
-      "approach": "enchant table"
-    }
-  },
-  {
-    "teleport_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "teleport_enchantment",
-      "approach": "enchant table"
-    }
-  },
-  {
     "qi_attack_enchantment": {
       "usage": "",
       "additional": "",
@@ -64,30 +40,8 @@
       "approach": "enchant table"
     }
   },
-  {
-    "yin_yang_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "yin_yang_enchantment",
-      "approach": "enchant table"
-    }
-  },
-  {
-    "antiback_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "antiback_enchantment",
-      "approach": "enchant table"
-    }
-  },
-  {
-    "bagua_enchantment": {
-      "usage": "",
-      "additional": "",
-      "name": "bagua_enchantment",
-      "approach": "enchant table"
-    }
-  },
+
+
   {
     "qifield_enchantment": {
       "usage": "",
@@ -98,7 +52,7 @@
   },
   {
     "pull_back_enchantment": {
-      "usage": "",
+      "usage": "pull yourself back while sneaking and using bow",
       "additional": "",
       "name": "pull_back_enchantment",
       "approach": "enchant table"

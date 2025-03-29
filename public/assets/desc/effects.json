@@ -1,17 +1,17 @@
 [
   {
     "erupt": {
-      "name": "fusion",
+      "name": "erupt",
       "icon": "/assets/icon/effect/erupt.png",
-      "usage": "noop",
-      "approach": "noop",
-      "additional": "noop"
+      "usage": "enhance some item power",
+      "approach": "eat 'golden_egg'",
+      "additional": "really?"
     }
   },
   {
     "freeze": {
       "usage": "freeze mob view and movement",
-      "additional": "",
+      "additional": "it appears not frozen completely",
       "name": "freeze",
       "icon": "/assets/icon/effect/freeze.png",
       "approach": "mouse talisman and been attack by some mob"

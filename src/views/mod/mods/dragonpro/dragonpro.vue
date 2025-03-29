@@ -4,11 +4,7 @@
     <div id="header">
       <img src="/src/assets/dragon-logo.jpg" alt="dragonpro logo" id="dragonlogo">
       <div id="text-content">
-        <h5>Shadow Dragon(SD)</h5>
-        <span>By jackchuan | Mods |
-          <img src="../../../../assets/download.svg" id="icon">
-            {{ downloads }}
-        </span>
+        <h5 style="color: black;font-weight: bold;font-size: 26px">Shadow Dragon(SD)</h5>
       </div>
       <div id="buttons">
         <el-button @click="download">
@@ -19,18 +15,6 @@
       </div>
     </div>
     <hr>
-    <!-- router links -->
-    <div id="links">
-      <nav>
-        <router-link to="/mc/mods/dragonpro/description">Description</router-link>
-        <router-link to="/mc/mods/dragonpro/files">Files</router-link>
-        <router-link to="/mc/mods/dragonpro/images">Images</router-link>
-        <router-link to="/mc/mods/dragonpro/relations">Relations</router-link>
-        <a href="https://github.com/lyxnd/dragonpro_1.20.1" target="_blank">Source</a>
-        <a href="https://github.com/lyxnd/dragonpro_1.20.1/issues" target="_blank">Issues</a>
-      </nav>
-      <br>
-    </div>
 
     <!-- details -->
     <div id="details">

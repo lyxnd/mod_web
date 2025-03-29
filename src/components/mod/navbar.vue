@@ -2,7 +2,7 @@
   <nav class="navbar">
     <router-link to="/mc/mods">Mods</router-link>
     <router-link to="/mc/contact">Contact</router-link>
-    <router-link to="/mc/donate">Donate</router-link>
+    <router-link to="/mc/donate">...</router-link>
   </nav>
 </template>
 

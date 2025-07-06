@@ -2,7 +2,7 @@
   {
     "mouse": {
       "name": "mouse_item",
-      "icon": "/assets/icon/item/mouse.png",
+      "icon": "/mod_web/assets/icon/item/mouse.png",
       "approach": "kill Shendu",
       "usage": "transform silence into active,and active into silence(which means freeze mob and transform block into an entity)",
       "sneak": "(In Talisman Pocket)freeze effect immune and have chance to freeze attacker",

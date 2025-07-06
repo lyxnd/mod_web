@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import Mods from '../views/mod/mods/mods.vue';
 import Contact from '../views/mod/mods/contact.vue';
 import Donate from '../views/mod/mods/donate.vue';
@@ -10,7 +10,6 @@ import Dragonpro_Images from '@/views/mod/mods/dragonpro/images.vue'
 import Dragonpro_Relations from '@/views/mod/mods/dragonpro/relations.vue'
 import Dragonpro_Fabric from '@/views/mod/mods/dragonpro/version/Fabric.vue'
 import Dragonpro_Forge from '@/views/mod/mods/dragonpro/version/Forge.vue'
-import {ref,watchEffect} from 'vue'
 
 const routes = [
     { path: '/', redirect: '/mc' },
@@ -67,7 +66,7 @@ const routes = [
 
 ];
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 });
 

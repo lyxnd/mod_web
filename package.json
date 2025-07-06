@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/lyxnd/mod_web.git",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
@@ -17,8 +19,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
-    "vite": "6.3.4",
+    "gh-pages": "^6.3.0",
     "three": "^0.178.0",
+    "vite": "6.3.4",
     "vue-carousel": "^0.18.0",
     "vue-router": "^4.0.13"
   }

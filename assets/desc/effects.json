@@ -1,0 +1,173 @@
+[
+  {
+    "erupt": {
+      "name": "erupt",
+      "icon": "/assets/icon/effect/erupt.png",
+      "usage": "enhance some item power",
+      "approach": "eat 'golden_egg'",
+      "additional": "really?"
+    }
+  },
+  {
+    "freeze": {
+      "usage": "freeze mob view and movement",
+      "additional": "it appears not frozen completely",
+      "name": "freeze",
+      "icon": "/assets/icon/effect/freeze.png",
+      "approach": "mouse talisman and been attack by some mob"
+    }
+  },
+  {
+    "ghost_in_body": {
+      "usage": "transform black qi around you into mobs",
+      "additional": "maybe it's a good way to get staffs",
+      "name": "ghost_in_body",
+      "icon": "/assets/icon/effect/ghost_in_body.png",
+      "approach": "been cursed"
+    }
+  },
+  {
+    "flying": {
+      "usage": "allow you fly like in creative mode",
+      "additional": "pay attention about the duration",
+      "name": "flying",
+      "icon": "/assets/icon/effect/flying.png",
+      "approach": "sky origin stone"
+    }
+  },
+  {
+    "disorder": {
+      "usage": "out of control (movement,view)",
+      "additional": "empty",
+      "name": "disorder",
+      "icon": "/assets/icon/effect/disorder.png",
+      "approach": "been cursed or attacked by some mobs"
+    }
+  },
+  {
+    "putrefy": {
+      "usage": "decrease you items' duration (all breakable item in inventory)",
+      "additional": "maybe the worst effect in this mod",
+      "name": "putrefy",
+      "icon": "/assets/icon/effect/putrefy.png",
+      "approach": "been cursed or attacked by some mobs"
+    }
+  },
+  {
+    "talisman_conflict": {
+      "usage": "bring all unlucky to you",
+      "additional": "without tiger talisman in the pocket, you will be destoryed by talismans' power",
+      "name": "talisman_conflict",
+      "icon": "/assets/icon/effect/talisman_conflict.png",
+      "approach": "without tiger talisman in pocket"
+    }
+  },
+  {
+    "gravity_plus": {
+      "usage": "increase gravity that will break you body and can't go higher",
+      "additional": "pay attention if you want to fight while flying",
+      "name": "gravity_plus",
+      "icon": "/assets/icon/effect/gravity_plus.png",
+      "approach": "tsolan or tsolan's qi or been cursed"
+    }
+  },
+  {
+    "falling_protection": {
+      "usage": "Invulnerable to falling",
+      "additional": "maybe chicken talisman can make this as well",
+      "name": "falling_protection",
+      "icon": "/assets/icon/effect/falling_protection.png",
+      "approach": "mountain origin stone"
+    }
+  },
+  {
+    "press_protection": {
+      "usage": "iInvulnerable in blocks",
+      "additional": "maybe you walk through blocks",
+      "name": "press_protection",
+      "icon": "/assets/icon/effect/press_protection.png",
+      "approach": "ground origin stone"
+    }
+  },
+  {
+    "moon_walk": {
+      "usage": "create block under feet (walk in the air)",
+      "additional": "what is this for if i can fly",
+      "name": "moon_walk",
+      "icon": "/assets/icon/effect/moon_walk.png",
+      "approach": ""
+    }
+  },
+  {
+    "leigod_grace": {
+      "usage": "attack mobs nearby with thunder",
+      "additional": "emmm,will you have their drops with lighting?",
+      "name": "leigod_grace",
+      "icon": "/assets/icon/effect/leigod_grace.png",
+      "approach": ""
+    }
+  },
+  {
+    "paralysis": {
+      "usage": "just can move anymore",
+      "additional": "just lock you position",
+      "name": "paralysis",
+      "icon": "/assets/icon/effect/paralysis.png",
+      "approach": "attacked by lighting perhaps"
+    }
+  },
+  {
+    "nightmare": {
+      "usage": "decrease you max health and cannot sleep in a while",
+      "additional": "died aigan will handle this",
+      "name": "nightmare",
+      "icon": "/assets/icon/effect/nightmare.png",
+      "approach": "died in the dream dimension"
+    }
+  },
+  {
+    "asleep": {
+      "usage": "make mob fall in sleep",
+      "additional": "what's the difference with freeze?",
+      "name": "asleep",
+      "icon": "/assets/icon/effect/asleep.png",
+      "approach": "sheep talisman"
+    }
+  },
+  {
+    "flower_grace": {
+      "usage": "bring you unstoppable power for a while and some chance",
+      "additional": "long life the steve !!!",
+      "name": "flower_grace",
+      "icon": "/assets/icon/effect/flower_grace.png",
+      "approach": "dog talisman"
+    }
+  },
+  {
+    "scared": {
+      "usage": "random movement",
+      "additional": "is this disgusting",
+      "name": "scared",
+      "icon": "/assets/icon/effect/scared.png",
+      "approach": "been attacked by oxhead"
+    }
+  },
+  {
+    "unlucky": {
+      "usage": "bad events are going to come to you",
+      "additional": "not bad enough exactly",
+      "name": "unlucky",
+      "icon": "/assets/icon/effect/unlucky.png",
+      "approach": "kill thief or been cursed"
+    }
+  },
+  {
+    "infection": {
+      "usage": "summon a revenger to help you to revenge",
+      "additional": "quiet fatal",
+      "name": "infection",
+      "icon": "/assets/icon/effect/infection.png",
+      "approach": "some mobs' skill or touch with heavy water"
+    }
+  }
+]

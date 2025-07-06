@@ -1,0 +1,473 @@
+[
+  {
+    "Shen du": {
+      "name": "Shen Du",
+      "icon": "/assets/icon/entity/shendu.png",
+      "max_hp": "1000",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "the most evil dragon ever,burning everything on his way,and those protestors",
+      "attack_damage": "15",
+      "skill": [
+        "freeze all livings nearby",
+        "freeze all livings nearby"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ShenDuModel.gltf",
+      "images": [
+        "/assets/icon/entity/shendu.png",
+        "/assets/icon/entity/shendu_0.png",
+        "/assets/icon/entity/shendu_1.png",
+        "/assets/icon/entity/shendu_2.png",
+        "/assets/icon/entity/shendu_3.png",
+        "/assets/icon/entity/shendu_4.png"
+      ]
+    }
+  },
+  {
+    "Bai Tza": {
+      "name": "Bai Tza",
+      "icon": "/assets/icon/entity/baitza.png",
+      "max_hp": "700",
+      "speed": "0.4",
+      "armor": "6",
+      "description": "a smart but disgusting snake,dry lands will be her dead scene.",
+      "attack_damage": "15",
+      "skill": [
+        "absort water around to heal self"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/Bai_TzaModel.gltf",
+      "images": [
+        "/assets/icon/entity/baitza.png",
+        "/assets/icon/entity/baitza_0.png"
+      ]
+    }
+  },
+  {
+    "Xiao fung": {
+      "name": "Xiao Fung",
+      "icon": "/assets/icon/entity/xiaofung.png",
+      "max_hp": "900",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "control qi to attack and fly, unreachable",
+      "attack_damage": "15",
+      "skill": [
+        "absort qi around to heal self"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/XiaoFungModel.gltf",
+      "images": [
+        "/assets/icon/entity/xiaofung.png",
+        "/assets/icon/entity/xiaofung_0.png"
+      ]
+    }
+  },
+  {
+    "Hsiwu": {
+      "name": "Hsiwu",
+      "icon": "/assets/icon/entity/hsiwu.png",
+      "max_hp": "600",
+      "speed": "1",
+      "armor": "5",
+      "description": "sky and the sun, which creatures live on,will gobble them all up",
+      "attack_damage": "8",
+      "skill": [
+        "connect world with hell,bring all monsters to land"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/HsiWuModel.gltf",
+      "images": [
+        "/assets/icon/entity/hsiwu.png",
+        "/assets/icon/entity/hsiwu_0.png"
+      ]
+    }
+  },
+  {
+    "Pokong": {
+      "name": "Pokong",
+      "icon": "/assets/icon/entity/pokong.png",
+      "max_hp": "1200",
+      "speed": "0.18",
+      "armor": "40",
+      "description": "most toughest,can absort all damage into piece of cake",
+      "attack_damage": "12",
+      "skill": [
+        "absort blocks nearby into his body and make himself more tough"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/PoKongModel.gltf",
+      "images": [
+        "/assets/icon/entity/pokong.png",
+        "/assets/icon/entity/pokong_0.png"
+      ]
+    }
+  },
+  {
+    "Dai Gui": {
+      "name": "Dai Gui",
+      "icon": "/assets/icon/entity/daigui.png",
+      "max_hp": "1000",
+      "speed": "0.28",
+      "armor": "12",
+      "description": "living underground without light makes him very furious",
+      "attack_damage": "15",
+      "skill": [
+        "summon stone gland to break the land"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/DaiGuiModel.gltf",
+      "images": [
+        "/assets/icon/entity/daigui.png",
+        "/assets/icon/entity/daigui_0.png"
+      ]
+    }
+  },
+  {
+    "Tsolan": {
+      "name": "Tsolan",
+      "icon": "/assets/icon/entity/tsolan.png",
+      "max_hp": "700",
+      "speed": "0.6",
+      "armor": "8",
+      "description": "the oldest man living alone the world,how he finally become a monster?",
+      "attack_damage": "10",
+      "skill": [
+        "summon gravity ball to attack"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/TsoLanModel.gltf",
+      "images": [
+        "/assets/icon/entity/tsolan.png",
+        "/assets/icon/entity/tsolan_0.png"
+      ]
+    }
+  },
+  {
+    "Tchangzu": {
+      "name": "Tchangzu",
+      "icon": "/assets/icon/entity/tchangzu.png",
+      "max_hp": "900",
+      "speed": "0.28",
+      "armor": "9",
+      "description": "murder,destroy all the bad things is relative to him,the arrogant devil ever,should be punished long before. ",
+      "attack_damage": "15",
+      "skill": [
+        "summon lighting ball to attack"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/TchangZuModel.gltf",
+      "images": [
+        "/assets/icon/entity/tchangzu.png",
+        "/assets/icon/entity/tchangzu_0.png"
+      ]
+    }
+  },
+  {
+    "ShadowKhan": {
+      "name": "ShadowKhan",
+      "icon": "/assets/icon/entity/shadowkhan.png",
+      "max_hp": "80",
+      "speed": "0.6",
+      "armor": "0.6",
+      "description": "killer from shadow kingdom without feelings,and the only thing they will do is just follow the order.",
+      "attack_damage": "10",
+      "skill": [
+        "throw dart to attack"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ShadowkhanModel.gltf",
+      "images": [
+        "/assets/icon/entity/shadowkhan.png",
+        "/assets/icon/entity/shadowkhan_1.png"
+      ]
+    }
+  },
+  {
+    "SNP_Zombie": {
+      "name": "SNP Zombie",
+      "icon": "/assets/icon/entity/snp_zombie.png",
+      "max_hp": "30",
+      "speed": "0.23",
+      "armor": "3.0",
+      "description": "SNP zombie ,can jump and shoot fire ball, can break block -_-",
+      "attack_damage": "5",
+      "skill": [
+        "shoot fireball to attack"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/snp_zombie.png"
+      ]
+    }
+  },
+  {
+    "lighting_skeleton": {
+      "name": "Lighting Skeleton",
+      "icon": "/assets/icon/entity/lighting_skeleton.png",
+      "max_hp": "20",
+      "speed": "0.25",
+      "armor": "3.0",
+      "description": "lighting skeleton ,can jump and shoot special arrow",
+      "attack_damage": "5",
+      "skill": [
+        "shoot special arrow to attack"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/lighting_skeleton.png"
+      ]
+    }
+  },
+  {
+    "Jacker": {
+      "name": "Jacker",
+      "icon": "/assets/icon/entity/jacker.png",
+      "max_hp": "60",
+      "speed": "0.6",
+      "armor": "0.7",
+      "description": "a guide that work as iron golem",
+      "attack_damage": "6",
+      "skill": [
+        "shoot arrow to attack",
+        "shoot fireball to attack"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/JackerModel.gltf",
+      "images": [
+        "/assets/icon/entity/jacker.png",
+        "/assets/icon/entity/jacker_1.png"
+      ]
+    }
+  },
+  {
+    "Mattery_Spider": {
+      "name": "Mattery Spider",
+      "icon": "/assets/icon/entity/mattery_spider.png",
+      "max_hp": "30",
+      "speed": "0.24",
+      "armor": "0.4",
+      "description": "very ugly and disgusting spider",
+      "attack_damage": "3.6",
+      "skill": [
+        "summon cobweb"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/mattery_spider.png"
+      ]
+    }
+  },
+  {
+    "Lost_Creeper": {
+      "name": "Lost Creeper",
+      "icon": "/assets/icon/entity/lost_creeper.png",
+      "max_hp": "40",
+      "speed": "0.23",
+      "armor": "0.4",
+      "description": "creeper can spawn with effect",
+      "attack_damage": "0.0",
+      "skill": [
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/lost_creeper.png"
+      ]
+    }
+  },
+  {
+    "Thief": {
+      "name": "thief",
+      "icon": "/assets/icon/entity/thief.png",
+      "max_hp": "50",
+      "speed": "0.5",
+      "armor": "2.4",
+      "description": "thief who will stole your valuable items,pay attention!",
+      "attack_damage": "15",
+      "skill": [
+        "invisible when attacked"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ThiefModel.gltf",
+      "images": [
+        "/assets/icon/entity/thief.png"
+      ]
+    }
+  },
+  {
+    "Explosive_Blaze": {
+      "name": "Explosive Blaze",
+      "icon": "/assets/icon/entity/explosive_blaze.png",
+      "max_hp": "60",
+      "speed": "0.25",
+      "armor": "2.4",
+      "description": "stronger blaze",
+      "attack_damage": "8",
+      "skill": [
+        "dash you away"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/explosive_blaze.png",
+        "/assets/icon/entity/explosive_blaze_1.png"
+      ]
+    }
+  },
+  {
+    "Wasted_Enderman": {
+      "name": "Wasted Enderman",
+      "icon": "/assets/icon/entity/wasted_enderman.png",
+      "max_hp": "75",
+      "speed": "0.33",
+      "armor": "2.4",
+      "description": "bring curse and misfortune",
+      "attack_damage": "9",
+      "skill": [
+        "give curse effect to you"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/wasted_enderman.png"
+      ]
+    }
+  },
+  {
+    "Blood_Zombie": {
+      "name": "Blood Zombie",
+      "icon": "/assets/icon/entity/blood_zombie.png",
+      "max_hp": "45",
+      "speed": "0.23",
+      "armor": "3",
+      "description": "can inspire mobs nearby(making them much stronger)",
+      "attack_damage": "6",
+      "skill": [
+        "inspire mobs"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/blood_zombie.png"
+      ]
+    }
+  },
+  {
+    "Infectious_Zombie": {
+      "name": "Infectious Zombie",
+      "icon": "/assets/icon/entity/infectious_zombie.png",
+      "max_hp": "55",
+      "speed": "0.28",
+      "armor": "3",
+      "description": "will attack most creatures nearby and if kill creature successfully, the creature will transform into zombie,when the count comes up to 5,infectious zombie can respawn if killed,or comes up to 10 will call golem zombie to fight ",
+      "attack_damage": "8",
+      "skill": [
+        "infect creature",
+        "respawn",
+        "call golem zombie"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/infectious_zombie.png"
+      ]
+    }
+  },
+  {
+    "Golem_Zombie": {
+      "name": "Golem Zombie",
+      "icon": "/assets/icon/entity/golem_zombie.png",
+      "max_hp": "150",
+      "speed": "0.23",
+      "armor": "12",
+      "description": "strongest zombie in family",
+      "attack_damage": "15",
+      "skill": [
+        "slow target speed for a while(through punch ground)"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/Revenge_GolemModel.gltf",
+      "images": [
+        "/assets/icon/entity/golem_zombie.png"
+      ]
+    }
+  },
+  {
+    "Wasted_Skeleton": {
+      "name": "Wasted Skeleton",
+      "icon": "/assets/icon/entity/wasted_skeleton.png",
+      "max_hp": "45",
+      "speed": "0.28",
+      "armor": "8",
+      "description": "infect block and will spawn a new wasted skeleton if that block broken",
+      "attack_damage": "8",
+      "skill": [
+        "infect block",
+        "shoot wasted skull"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/wasted_skeleton.png"
+      ]
+    }
+  },
+  {
+    "Scientist_Zombie": {
+      "name": "Scientist Zombie",
+      "icon": "/assets/icon/entity/scientist_zombie.png",
+      "max_hp": "85",
+      "speed": "0.23",
+      "armor": "3",
+      "description": "will have lots of items(eg golden apple,enchanted golden apple,totem of undying),and teleport zombie to target",
+      "attack_damage": "5",
+      "skill": [
+        "use items",
+        "teleport zombies"
+      ],
+      "additional": "noop",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/scientist_zombie.png"
+      ]
+    }
+  },
+  {
+    "Dancer": {
+      "name": "Dancer",
+      "icon": "/assets/icon/entity/dancer.png",
+      "max_hp": "70",
+      "speed": "0.4",
+      "armor": "3.5",
+      "description": "some kind of zombie,but won't attack you,can perform if you upload a sweepstack,",
+      "attack_damage": "8",
+      "skill": [
+        "perform dance",
+        "summon guides to protect himself"
+      ],
+      "additional": "noop",
+      "hasModel": true,
+      "modelUrl": "/assets/model/DancerModel.gltf",
+      "images": [
+        "/assets/icon/entity/dancer.png"
+      ]
+    }
+  }
+]

@@ -8,6 +8,14 @@ import Home from './components/index.vue'
   </div>
 </template>
 
-<style scoped>
+<style>
+.el-popper {
+  color: #002162 !important;
+  font-size: 20px !important;
+  width: 300px !important;
+  height: auto!important;
+  font-family: 楷体;
+  font-weight: bold !important;
+}
 
 </style>

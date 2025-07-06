@@ -1,6 +1,13 @@
 <template>
   <div>
     <el-card v-for="entity in entities" :key="entity.name" class="custom-card">
+      <div style="display: block;">
+        <span style="display: flex;align-items: center;width:100%;justify-content: center">
+          <el-button round type="success" @click="changeRenderedModel(entity.modelUrl)" v-if="renderModelUrl!==entity.modelUrl">渲染模型</el-button>
+          <el-button round type="danger" @click="cancelRenderModel" v-if="renderModelUrl===entity.modelUrl">禁用渲染</el-button>
+        </span>
+        <ModleViewer :model-url="entity.modelUrl" v-if="entity.hasModel&&renderModelUrl===entity.modelUrl"/>
+      </div>
       <!-- 图片轮播 -->
       <el-carousel height="auto" type="card">
         <el-carousel-item v-for="(image, index) in entity.images" :key="index" style="min-height: 400px">
@@ -10,7 +17,7 @@
 
       <!--  属性区    -->
       <div>
-        <h3>{{entity.name}} :</h3>
+        <h3 style="font-size: 25px;font-weight: bold;" :id="'row-' + entity.name">{{entity.name}} :</h3>
         <span style="border: hotpink dashed 2px;padding: 5px;margin-bottom: 15px">
           <el-tag type="success" class="attribute">Max Health : {{entity.max_hp}}</el-tag>
           <el-tag type="danger" class="attribute">Attack Damage : {{entity.attack_damage}}</el-tag>
@@ -33,7 +40,8 @@
 </template>
 
 <script setup>
-import {onMounted, reactive, ref} from "vue";
+import {nextTick, onMounted, reactive, ref, watch} from "vue";
+import ModleViewer from "@/components/mod/ModleViewer.vue";
 
 const entities =ref([])
 const fetchData = async () => {
@@ -43,9 +51,11 @@ const fetchData = async () => {
     entities.value = jsonData.map(item => {
       const key = Object.keys(item)[0];
       return {
-        name: item[key].Name || item[key].name, // 适配不同的字段命名
+        name: item[key].Name || item[key].name,
         icon: item[key].Icon || item[key].iocn,
         additional: item[key].Additional || item[key].additional,
+        hasModel: item[key].HasModel || item[key].hasModel,
+        modelUrl: item[key].ModelUrl || item[key].modelUrl,
         max_hp: item[key].Max_hp || item[key].max_hp,
         speed: item[key].Speed || item[key].speed,
         armor: item[key].Armor || item[key].armor,
@@ -59,6 +69,13 @@ const fetchData = async () => {
     console.error("加载 JSON 失败:", error);
   }
 };
+const renderModelUrl=ref('')
+const changeRenderedModel=(url)=>{
+  renderModelUrl.value=url
+}
+const cancelRenderModel=()=>{
+  renderModelUrl.value=''
+}
 onMounted(fetchData)
 </script>
 

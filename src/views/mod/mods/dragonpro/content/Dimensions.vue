@@ -22,6 +22,7 @@
               you'll take them back.<br>
               * However, if you dead in the dimension you will lose the left items. Oh by the way, you will be given
               some items too. for it's a dream.<br>
+              * In some approach, you may keep the given items while leaving, But how?
               * So kill ender dragon to take the sheep talisman would be a better choice. or put items into chests and
               dig a hole to waiting for wake up.
             </p>
@@ -53,7 +54,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>

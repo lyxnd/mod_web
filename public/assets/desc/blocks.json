@@ -58,5 +58,17 @@
         "/assets/icon/block/spawner_block_add0.png"
       ]
     }
+  },
+  {
+    "token_magic_extractor_block": {
+      "usage": "react with token items can protect you from devils' qi ",
+      "additional": "area protection and will run out of magic",
+      "name": "token_magic_extractor_block",
+      "icon": "/assets/icon/block/token_magic_extractor_block.png",
+      "approach": "craftable",
+      "additionalImg": [
+        "/assets/icon/block/token_magic_extractor_block_1.png"
+      ]
+    }
   }
 ]

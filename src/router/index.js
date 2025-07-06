@@ -3,13 +3,13 @@ import Mods from '../views/mod/mods/mods.vue';
 import Contact from '../views/mod/mods/contact.vue';
 import Donate from '../views/mod/mods/donate.vue';
 import MC from '@/views/mod/mc.vue'
-import Dragonpro from "@/views/mod/mods/dragonpro/dragonpro.vue";
-import Dragonpro_Description from "@/views/mod/mods/dragonpro/description.vue";
-import Dragonpro_Files from '@/views/mod/mods/dragonpro/files.vue'
+import Dragonpro from "@/views/mod/mods/dragonpro/Dragonpro.vue";
+import Dragonpro_Description from "@/views/mod/mods/dragonpro/Description.vue";
+import Dragonpro_Files from '@/views/mod/mods/dragonpro/Files.vue'
 import Dragonpro_Images from '@/views/mod/mods/dragonpro/images.vue'
 import Dragonpro_Relations from '@/views/mod/mods/dragonpro/relations.vue'
-import Dragonpro_Fabric from '@/views/mod/mods/dragonpro/version/fabric.vue'
-import Dragonpro_Forge from '@/views/mod/mods/dragonpro/version/forge.vue';
+import Dragonpro_Fabric from '@/views/mod/mods/dragonpro/version/Fabric.vue'
+import Dragonpro_Forge from '@/views/mod/mods/dragonpro/version/Forge.vue'
 import {ref,watchEffect} from 'vue'
 
 const routes = [

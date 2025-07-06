@@ -3,15 +3,59 @@
   <div style="background: transparent !important;">
     <el-table :data="blockProperty" style="width: 100%;background: transparent" height="100%" border
               :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Block" width="120" style="font-weight: bold;font-size: 30px"/>
+      <el-table-column prop="name" label="Block" width="120" style="font-weight: bold;font-size: 30px">
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.name"
+              placement="top"
+          >
+            <span :id="'row-' + scope.row.name" class="tl-column">{{ scope.row.name }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
       <el-table-column label="icon" width="100">
         <template #default="{ row }">
           <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" />
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable/>
-      <el-table-column prop="additional" label="Additional" width="120" />
+      <el-table-column prop="approach" label="Approach" width="150" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.approach"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.approach }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.usage"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.usage }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="additional" label="Additional" width="120" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.additional"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.additional }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
       <el-table-column label="Images" width="180">
         <template #default="{ row }">
           <div class="image-list">
@@ -33,7 +77,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import {ref, onMounted, watch, nextTick} from "vue";
 import ImagePreviewDialog from "@/components/ImagePreviewDialog.vue";
 const previewDialog = ref(null); // 预览组件引用
 const previewImages = ref([]); // 当前要预览的图片
@@ -58,15 +102,9 @@ const fetchData = async () => {
         additionalImg: item[key].AdditionalImg || item[key].additionalImg
       };
     });
-    updateParentData();
   } catch (error) {
     console.error("加载 JSON 失败:", error);
   }
-};
-const emit = defineEmits(['updateData']);
-
-const updateParentData = () => {
-  emit('updateData', blockProperty.value);
 };
 onMounted(fetchData);
 </script>

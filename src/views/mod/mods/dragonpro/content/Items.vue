@@ -2,18 +2,95 @@
   <div style="background: transparent !important;">
     <el-table :data="itemProperty" style="width: 100%;background: transparent" height="600px" border
               :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Item" width="120" style="font-weight: bold;font-size: 30px" fixed/>
+      <el-table-column prop="name" label="Item" width="60" style="font-weight: bold;font-size: 30px;"  fixed >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.name"
+              placement="top"
+          >
+            <span :id="'row-' + scope.row.name" class="tl-column">{{ scope.row.name }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
       <el-table-column label="icon" width="100">
         <template #default="{ row }">
           <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" />
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable/>
-      <el-table-column prop="attribute" label="Attribute" min-width="80" resizable/>
-      <el-table-column prop="sneak" label="Sneak" width="100" />
-      <el-table-column prop="erupt" label="Erupt" width="100" />
-      <el-table-column prop="additional" label="Additional" width="120" />
+      <el-table-column prop="approach" label="Approach" width="150" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.approach"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.approach }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.usage"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.usage }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="attribute" label="Attribute" min-width="80" resizable>
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.attribute"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.attribute }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="sneak" label="Sneak" width="100" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.sneak"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.sneak }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="erupt" label="Erupt" width="100" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.erupt"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.erupt }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
+      <el-table-column prop="additional" label="Additional" width="120" >
+        <template #default="scope">
+          <el-tooltip
+              class="box-item"
+              effect="light"
+              :content="scope.row.additional"
+              placement="top"
+          >
+            <span  class="tl-column">{{ scope.row.additional }}</span>
+          </el-tooltip>
+        </template>
+      </el-table-column>
       <el-table-column label="Images" width="180">
         <template #default="{ row }">
           <div class="image-list">
@@ -35,16 +112,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import {ref, onMounted} from "vue";
 import ImagePreviewDialog from "@/components/ImagePreviewDialog.vue";
 const itemProperty = ref([]);
 const previewDialog = ref(null); // 预览组件引用
 const previewImages = ref([]); // 当前要预览的图片
-
 const openPreview = (images) => {
   previewImages.value = images; // 设置当前要预览的图片
   previewDialog.value.openDialog(); // 调用子组件的方法打开弹窗
 };
+
 const fetchData = async () => {
   try {
     const response = await fetch("/assets/desc/items.json");
@@ -107,5 +184,9 @@ onMounted(fetchData);
 img {
   display: block;
   margin: auto;
+}
+.tl-column{
+  font-size: large;
+  font-weight: bold;
 }
 </style>

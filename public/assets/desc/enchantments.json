@@ -1,7 +1,7 @@
 [
   {
     "Qi Attack": {
-      "name": "Qi Attack",
+      "name": "Qi Attack_enchantment",
       "icon": "/assets/icon/block/fusion.png",
       "usage": "noop",
       "approach": "enchant table",
@@ -12,7 +12,7 @@
     "mining_protection": {
       "usage": "decrease the block transform rate while mining",
       "additional": "higher risk, higher benifit",
-      "name": "mining_protection",
+      "name": "mining_protection_enchantment",
       "approach": "enchant table"
     }
   },
@@ -40,8 +40,6 @@
       "approach": "enchant table"
     }
   },
-
-
   {
     "qifield_enchantment": {
       "usage": "",

@@ -2,8 +2,8 @@
 <div>
   <div style="background: transparent !important;">
     <el-table :data="effectProperty" style="width: 100%;background: transparent" height="100%" border
-              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Block" width="120" style="font-weight: bold;font-size: 30px">
+              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }">
+      <el-table-column prop="name" label="Block" style="font-weight: bold;font-size: 30px">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -15,12 +15,12 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="icon" width="100">
+      <el-table-column label="icon">
         <template #default="{ row }">
           <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" >
+      <el-table-column prop="approach" label="Approach"  >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -32,7 +32,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+      <el-table-column prop="usage" label="Usage" resizable>
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -44,7 +44,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="additional" label="Additional" width="120" >
+      <el-table-column prop="additional" label="Additional" >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -66,13 +66,17 @@ import {ref, onMounted, watch, nextTick} from "vue";
 const effectProperty = ref([]);
 const fetchData = async () => {
   try {
-    const response = await fetch("/assets/desc/effects.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/effects.json`);
     const jsonData = await response.json();
+    const baseUrl = import.meta.env.BASE_URL
     effectProperty.value = jsonData.map(item => {
       const key = Object.keys(item)[0];
+      // 取出原始 additionalImg，可能是数组，也可能不存在
+      let icons = item[key].Icon || item[key].icon || '';
+      icons=baseUrl+icons
       return {
         name: item[key].Name || item[key].name, // 适配不同的字段命名
-        icon: item[key].Icon || item[key].icon, // 适配不同的字段命名
+        icon: icons, // 适配不同的字段命名
         approach: item[key].Approach || item[key].approach,
         usage: item[key].Usage || item[key].usage,
         sneak: item[key].Sneak || item[key].sneak,

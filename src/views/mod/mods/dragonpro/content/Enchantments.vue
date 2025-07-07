@@ -2,8 +2,8 @@
 <div>
   <div style="background: transparent !important;">
     <el-table :data="enchantmentProperty" style="width: 100%;background: transparent" height="100%" border
-              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Block" width="120" style="font-weight: bold;font-size: 30px">
+              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" >
+      <el-table-column prop="name" label="Block" style="font-weight: bold;font-size: 30px">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -15,7 +15,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" >
+      <el-table-column prop="approach" label="Approach"  >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -27,7 +27,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+      <el-table-column prop="usage" label="Usage" resizable>
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -39,7 +39,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="additional" label="Additional" width="120" >
+      <el-table-column prop="additional" label="Additional"  >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -61,7 +61,7 @@ import {ref, onMounted, watch, nextTick} from "vue";
 const enchantmentProperty = ref([]);
 const fetchData = async () => {
   try {
-    const response = await fetch("/assets/desc/enchantments.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/enchantments.json`);
     const jsonData = await response.json();
     enchantmentProperty.value = jsonData.map(item => {
       const key = Object.keys(item)[0];

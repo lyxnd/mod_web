@@ -1,8 +1,8 @@
 <template>
-  <div style="background: transparent !important;">
-    <el-table :data="itemProperty" style="width: 100%;background: transparent" height="600px" border
-              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Item" width="60" style="font-weight: bold;font-size: 30px;"  fixed >
+  <div style="background: transparent !important;overflow-y: auto;height: 100vh" id="scroller" @scroll="scrollHandler">
+    <el-table :data="itemProperty" style="width: 100%;background: transparent" height="100%" border
+              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" >
+      <el-table-column prop="name" label="Item"  style="font-weight: bold;font-size: 30px;"  resizable="resizable">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -14,12 +14,12 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="icon" width="100">
+      <el-table-column label="icon" resizable="resizable">
         <template #default="{ row }">
           <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" >
+      <el-table-column prop="approach" label="Approach" resizable="resizable">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -31,7 +31,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+      <el-table-column prop="usage" label="Usage" resizable="resizable" min-width="120">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -43,7 +43,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="attribute" label="Attribute" min-width="80" resizable>
+      <el-table-column prop="attribute" label="Attribute" resizable="resizable">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -55,7 +55,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="sneak" label="Sneak" width="100" >
+      <el-table-column prop="sneak" label="Sneak"  resizable="resizable">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -67,7 +67,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="erupt" label="Erupt" width="100" >
+      <el-table-column prop="erupt" label="Erupt" resizable="resizable" >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -79,7 +79,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="additional" label="Additional" width="120" >
+      <el-table-column prop="additional" label="Additional"  resizable="resizable" min-width="100">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -91,7 +91,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="Images" width="180">
+      <el-table-column label="Images" resizable="resizable">
         <template #default="{ row }">
           <div class="image-list">
             <el-image
@@ -106,13 +106,19 @@
         </template>
       </el-table-column>
     </el-table>
-
     <ImagePreviewDialog ref="previewDialog" :images="previewImages" />
+    <el-button
+
+        class="back-to-top"
+        @click="scrollToTop"
+    >
+      ⬆ 回到顶部
+    </el-button>
   </div>
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue";
+import {ref, onMounted, onBeforeUnmount} from "vue";
 import ImagePreviewDialog from "@/components/ImagePreviewDialog.vue";
 const itemProperty = ref([]);
 const previewDialog = ref(null); // 预览组件引用
@@ -124,31 +130,83 @@ const openPreview = (images) => {
 
 const fetchData = async () => {
   try {
-    const response = await fetch("/assets/desc/items.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/items.json`);
     const jsonData = await response.json();
+    const baseUrl = import.meta.env.BASE_URL
     itemProperty.value = jsonData.map(item => {
       const key = Object.keys(item)[0];
+      // 取出原始 additionalImg，可能是数组，也可能不存在
+      const rawImgs = item[key].AdditionalImg || item[key].additionalImg || [];
+
+      // 处理图片数组，给相对路径加前缀
+      const fixedImgs = Array.isArray(rawImgs)
+          ? rawImgs.map(img => (/^https?:\/\//.test(img) ? img : baseUrl + img.replace(/^\/+/, '')))
+          : [];
+      let icons = item[key].Icon || item[key].icon || '';
+      icons=baseUrl+icons
       return {
-        name: item[key].Name || item[key].name, // 适配不同的字段命名
-        icon: item[key].Icon || item[key].icon, // 适配不同的字段命名
+        name: item[key].Name || item[key].name,
+        icon: icons,
         approach: item[key].Approach || item[key].approach,
         usage: item[key].Usage || item[key].usage,
         sneak: item[key].Sneak || item[key].sneak,
         erupt: item[key].Erupt || item[key].erupt,
         attribute: item[key].Attribute || item[key].attribute,
         additional: item[key].Additional || item[key].additional,
-        additionalImg: item[key].AdditionalImg || item[key].additionalImg
+        additionalImg: fixedImgs
       };
     });
-    // updateParentData();
+
   } catch (error) {
     console.error("加载 JSON 失败:", error);
   }
 };
 onMounted(fetchData);
+const showBackTop = ref(false)
+
+const scrollHandler = () => {
+  const scroller = document.getElementById('scroller')
+  console.log(scroller)
+  if (scroller) {
+    console.log(scroller.scrollTop)
+    showBackTop.value = scroller.scrollTop > 300
+  }
+}
+
+const scrollToTop = () => {
+  const scroller = document.getElementById('scroller')
+  if (scroller) {
+    console.log(scroller.scrollTop)
+    scroller.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+}
+onMounted(() => {
+  window.addEventListener('scroll', scrollHandler)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', scrollHandler)
+})
 </script>
 
 <style scoped>
+.back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  padding: 10px 14px;
+  background-color: #409eff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 .el-table{
   background-color:transparent;
 }
@@ -189,4 +247,5 @@ img {
   font-size: large;
   font-weight: bold;
 }
+
 </style>

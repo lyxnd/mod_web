@@ -3,10 +3,13 @@
     <div>
       <el-container>
         <el-header style="border: green 2px dotted" height="auto">
-          <div>
-            <h1 class="title">
+          <h1 style="font-weight: bolder;font-size: 32px;color: blue">
+            Dream World & Mixed Dream World & Shadow Kingdom
+          </h1>
+          <el-card class="header">
+            <h2 class="title">
               Dream World & Mixed Dream World
-            </h1>
+            </h2>
             <p class="info">
               * When you are trying to sleep, pay attention, you will be teleported to one of the two dimensions at a
               low rate,<br>
@@ -26,7 +29,15 @@
               * So kill ender dragon to take the sheep talisman would be a better choice. or put items into chests and
               dig a hole to waiting for wake up.
             </p>
-          </div>
+          </el-card>
+          <el-card class="header">
+            <h2 class="title">
+              Shadow Kingdom
+            </h2>
+            <p class="info">
+             <br>
+            </p>
+          </el-card>
         </el-header>
         <el-main class="container_main">
           <el-card class="dimension_card">
@@ -42,6 +53,16 @@
             <template #header>
               <div class="card-header">
                 <h1 class="title">Mixed Dream World (Detail)</h1>
+                  ...
+<!--              TODO  -->
+              </div>
+            </template>
+          </el-card>
+
+          <el-card class="dimension_card">
+            <template #header>
+              <div class="card-header">
+                <h1 class="title">Shadow Kingdom (Detail)</h1>
                   ...
 <!--              TODO  -->
               </div>
@@ -86,5 +107,10 @@
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: rgba(1, 1, 1, 0.1);
+}
+.header{
+  background-color: rgba(227,227,227,0.1);
+  margin-top:4px;
+  margin-bottom:4px;
 }
 </style>

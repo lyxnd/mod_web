@@ -2,8 +2,8 @@
 <div>
   <div style="background: transparent !important;">
     <el-table :data="blockProperty" style="width: 100%;background: transparent" height="100%" border
-              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" table-layout="auto">
-      <el-table-column prop="name" label="Block" width="120" style="font-weight: bold;font-size: 30px">
+              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" >
+      <el-table-column prop="name" label="Block" style="font-weight: bold;font-size: 30px">
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -15,12 +15,12 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="icon" width="100">
+      <el-table-column label="icon" >
         <template #default="{ row }">
           <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
         </template>
       </el-table-column>
-      <el-table-column prop="approach" label="Approach" width="150" >
+      <el-table-column prop="approach" label="Approach"  >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -32,7 +32,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="usage" label="Usage" min-width="150" resizable>
+      <el-table-column prop="usage" label="Usage" resizable>
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -44,7 +44,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="additional" label="Additional" width="120" >
+      <el-table-column prop="additional" label="Additional" >
         <template #default="scope">
           <el-tooltip
               class="box-item"
@@ -56,7 +56,7 @@
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="Images" width="180">
+      <el-table-column label="Images" >
         <template #default="{ row }">
           <div class="image-list">
             <el-image
@@ -73,6 +73,7 @@
     </el-table>
   </div>
   <ImagePreviewDialog ref="previewDialog" :images="previewImages" />
+  <el-backtop :right="40" :bottom="40" />
 </div>
 </template>
 
@@ -89,17 +90,27 @@ const openPreview = (images) => {
 const blockProperty = ref([]);
 const fetchData = async () => {
   try {
-    const response = await fetch("/assets/desc/blocks.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/blocks.json`);
     const jsonData = await response.json();
+    const baseUrl = import.meta.env.BASE_URL
     blockProperty.value = jsonData.map(item => {
       const key = Object.keys(item)[0];
+      // 取出原始 additionalImg，可能是数组，也可能不存在
+      const rawImgs = item[key].AdditionalImg || item[key].additionalImg || [];
+
+      // 处理图片数组，给相对路径加前缀
+      const fixedImgs = Array.isArray(rawImgs)
+          ? rawImgs.map(img => (/^https?:\/\//.test(img) ? img : baseUrl + img.replace(/^\/+/, '')))
+          : [];
+      let icons = item[key].Icon || item[key].icon || '';
+      icons=baseUrl+icons
       return {
         name: item[key].Name || item[key].name,
-        icon: item[key].Icon || item[key].icon,
+        icon: icons,
         approach: item[key].Approach || item[key].approach,
         usage: item[key].Usage || item[key].usage,
         additional: item[key].Additional || item[key].additional,
-        additionalImg: item[key].AdditionalImg || item[key].additionalImg
+        additionalImg: fixedImgs
       };
     });
   } catch (error) {

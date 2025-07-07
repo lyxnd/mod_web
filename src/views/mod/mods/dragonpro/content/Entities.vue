@@ -46,23 +46,35 @@ import ModleViewer from "@/components/mod/ModleViewer.vue";
 const entities =ref([])
 const fetchData = async () => {
   try {
-    const response = await fetch("/assets/desc/entities.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/entities.json`);
     const jsonData = await response.json();
+    const baseUrl = import.meta.env.BASE_URL
     entities.value = jsonData.map(item => {
       const key = Object.keys(item)[0];
+      // 取出原始 additionalImg，可能是数组，也可能不存在
+      const rawImgs = item[key].Images || item[key].images || [];
+
+      // 处理图片数组，给相对路径加前缀
+      const fixedImgs = Array.isArray(rawImgs)
+          ? rawImgs.map(img => (/^https?:\/\//.test(img) ? img : baseUrl + img.replace(/^\/+/, '')))
+          : [];
+      let icons = item[key].Icon || item[key].icon || '';
+      icons=baseUrl+icons
+      let models = item[key].ModelUrl || item[key].modelUrl || '';
+      models=baseUrl+models
       return {
         name: item[key].Name || item[key].name,
-        icon: item[key].Icon || item[key].iocn,
+        icon: icons,
         additional: item[key].Additional || item[key].additional,
         hasModel: item[key].HasModel || item[key].hasModel,
-        modelUrl: item[key].ModelUrl || item[key].modelUrl,
+        modelUrl: models,
         max_hp: item[key].Max_hp || item[key].max_hp,
         speed: item[key].Speed || item[key].speed,
         armor: item[key].Armor || item[key].armor,
         description: item[key].Description || item[key].description,
         attack_damage: item[key].Attack_damage || item[key].attack_damage,
         skill: item[key].Skill || item[key].skill,
-        images: item[key].Images || item[key].images,
+        images: fixedImgs,
       };
     });
   } catch (error) {

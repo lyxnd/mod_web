@@ -2,6 +2,7 @@
   <div id="package">
     <nav id="headers" v-if="shown">
       <router-link to="/mc/mods/dragonpro" @click="hide">Shadow Dragon</router-link>
+      <router-link to="/mc/mods/shadowdragon" @click="hide">DragonPro</router-link>
     </nav>
 
     <div id="modShow">
@@ -64,6 +65,7 @@ export default {
 <style>
 #modShow {
   overflow-y: auto;
+  height: 100vh;
 }
 #headers {
   display: flex;

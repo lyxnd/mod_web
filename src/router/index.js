@@ -55,6 +55,10 @@ const routes = [
                             }
                         ]
                     },
+                    {
+                        path:'shadowdragon',component: ()=>import('@/views/mod/mods/shadowdragon/Introduction.vue'),
+                        name: 'mods_shadowdragon'
+                    }
                 ]
 
             },

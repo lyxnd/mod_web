@@ -1,5 +1,22 @@
 <template>
-  <div class="description-wrapper">
+  <div class="page-component__scroll" style="overflow-y: auto;height:100vh">
+    <el-backtop target=".page-component__scroll" :bottom="100" :right="100" :visibility-height="300">
+      <div
+          style="
+        height: 100%;
+        width: 100%;
+        background-color: var(--el-bg-color-overlay);
+        box-shadow: var(--el-box-shadow-lighter);
+        text-align: center;
+        line-height: 30px;
+        color: #1989fa;
+      "
+      >
+        <el-icon :size="30" color="#00D9FF" style="background-color: #C2FFDD;padding:0;margin: 0;">
+          <Top />
+        </el-icon>
+      </div>
+    </el-backtop>
     <h1 style="color: black;font-weight: bold">Description</h1>
     <div style="display: flex;align-items: center;justify-content: center;margin: 16px 0;">
       <el-input v-model="regex" placeholder="search staffs here" :suffix-icon="Search"
@@ -8,7 +25,7 @@
       <el-switch active-text="启用模糊搜索" v-model="fuzzy_search"/>
     </div>
 
-    <el-tabs type="border-card" style="background: transparent;position: relative;" v-model="activeTab">
+    <el-tabs type="border-card" style="background: transparent;position: relative;" v-model="activeTab" >
       <el-tab-pane label="Items" name="Items" class="tab-pane">
         <Items />
       </el-tab-pane>
@@ -34,6 +51,7 @@
         <Others />
       </el-tab-pane>
     </el-tabs>
+
   </div>
 </template>
 
@@ -46,8 +64,8 @@ import Dimensions from "@/views/mod/mods/dragonpro/content/Dimensions.vue";
 import Events from "@/views/mod/mods/dragonpro/content/Events.vue";
 import Others from "@/views/mod/mods/dragonpro/content/Others.vue";
 import Entities from "@/views/mod/mods/dragonpro/content/Entities.vue";
-import {nextTick, ref, watch} from "vue";
-import {Search} from "@element-plus/icons-vue";
+import {nextTick, onBeforeUnmount, onMounted, ref, watch} from "vue";
+import {Edit, Search, Top} from "@element-plus/icons-vue";
 
 const regex = ref('')
 const fuzzy_search = ref(false)
@@ -109,11 +127,6 @@ watch(
   background: greenyellow !important;
   font-size: 20px;
   color: #1a1a1a !important;
-}
-
-.description-wrapper {
-  padding: 20px;
-  height: 100%; /* 确保内容填满整个容器 */
 }
 
 .tab-pane {

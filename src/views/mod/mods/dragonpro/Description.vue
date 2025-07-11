@@ -1,8 +1,26 @@
 <template>
-  <div class="page-component__scroll" style="overflow-y: auto;height:100vh">
-    <el-backtop target=".page-component__scroll" :bottom="100" :right="100" :visibility-height="300">
-      <div
-          style="
+  <div>
+    <h1 style="color: black;font-weight: bold">Description</h1>
+    <div style="display: flex;align-items: center;justify-content: center;margin: 16px 0;">
+      <el-input v-model="regex" placeholder="search staffs here" :suffix-icon="Search"
+                style="margin-right: 10px; border-radius: 6px; width: 80%" @keyup.enter="search(regex)"
+      />
+    </div>
+
+    <el-tabs v-model="activeTab" @tab-click="onTabChange" class="mod-tab" type="card">
+      <el-tab-pane label="Items" name="items" />
+      <el-tab-pane label="Blocks" name="blocks" />
+      <el-tab-pane label="Entities" name="entities" />
+      <el-tab-pane label="Enchantments" name="enchantments" />
+      <el-tab-pane label="Effects" name="effects" />
+      <el-tab-pane label="Dimensions" name="dimensions" />
+      <el-tab-pane label="Events" name="events" />
+      <el-tab-pane label="Others" name="others" />
+    </el-tabs>
+    <div class="page-component__scroll" style="overflow-y: auto;height:100vh">
+      <el-backtop target=".page-component__scroll" :bottom="100" :right="100" :visibility-height="250">
+        <div
+            style="
         height: 100%;
         width: 100%;
         background-color: var(--el-bg-color-overlay);
@@ -11,99 +29,47 @@
         line-height: 30px;
         color: #1989fa;
       "
-      >
-        <el-icon :size="30" color="#00D9FF" style="background-color: #C2FFDD;padding:0;margin: 0;">
-          <Top />
-        </el-icon>
-      </div>
-    </el-backtop>
-    <h1 style="color: black;font-weight: bold">Description</h1>
-    <div style="display: flex;align-items: center;justify-content: center;margin: 16px 0;">
-      <el-input v-model="regex" placeholder="search staffs here" :suffix-icon="Search"
-                style="margin-right: 10px; border-radius: 6px; width: 80%" @keyup.enter="search(regex)"
-      />
-      <el-switch active-text="启用模糊搜索" v-model="fuzzy_search"/>
+        >
+          <el-icon :size="30" color="#00D9FF" style="background-color: #C2FFDD;padding:0;margin: 0;">
+            <Top />
+          </el-icon>
+        </div>
+      </el-backtop>
+      <router-view />
     </div>
-
-    <el-tabs type="border-card" style="background: transparent;position: relative;" v-model="activeTab" >
-      <el-tab-pane label="Items" name="Items" class="tab-pane">
-        <Items />
-      </el-tab-pane>
-      <el-tab-pane label="Blocks" name="Blocks" class="tab-pane">
-        <Blocks />
-      </el-tab-pane>
-      <el-tab-pane label="Entities" name="Entities" class="tab-pane">
-        <Entities />
-      </el-tab-pane>
-      <el-tab-pane label="Enchantments" name="Enchantments" class="tab-pane">
-        <Enchantments />
-      </el-tab-pane>
-      <el-tab-pane label="Effects" name="Effects" class="tab-pane">
-        <Effects />
-      </el-tab-pane>
-      <el-tab-pane label="Dimensions" name="Dimensions" class="tab-pane">
-        <Dimensions />
-      </el-tab-pane>
-      <el-tab-pane label="Events" name="Events" class="tab-pane">
-        <Events />
-      </el-tab-pane>
-      <el-tab-pane label="Others" name="Others" class="tab-pane">
-        <Others />
-      </el-tab-pane>
-    </el-tabs>
-
   </div>
 </template>
 
 <script setup>
-import Items from "@/views/mod/mods/dragonpro/content/Items.vue";
-import Blocks from "@/views/mod/mods/dragonpro/content/Blocks.vue";
-import Enchantments from "@/views/mod/mods/dragonpro/content/Enchantments.vue";
-import Effects from "@/views/mod/mods/dragonpro/content/Effects.vue";
-import Dimensions from "@/views/mod/mods/dragonpro/content/Dimensions.vue";
-import Events from "@/views/mod/mods/dragonpro/content/Events.vue";
-import Others from "@/views/mod/mods/dragonpro/content/Others.vue";
-import Entities from "@/views/mod/mods/dragonpro/content/Entities.vue";
-import {nextTick, onBeforeUnmount, onMounted, ref, watch} from "vue";
-import {Edit, Search, Top} from "@element-plus/icons-vue";
+import {nextTick, onMounted, ref, watch} from "vue";
+import {Search, Top} from "@element-plus/icons-vue";
+import router from "@/router/index.js";
 
 const regex = ref('')
-const fuzzy_search = ref(false)
 const activeTab = ref('Items')
-const tags=ref(['item','block','effect','enchantment','entity'])
 
-const search=async (val)=>{
-  if(fuzzy_search.value){
+const itemWithType=ref({})
+const fetchData=async ()=>{
+  const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/staff_list.json`);
+  itemWithType.value = await response.json();
+}
 
-  }else {
-    for (let i = 0; i < 5; i++) {
-      const id = `row-${val}_${tags.value[i]}`
-      const el = document.getElementById(id)
-
-      if (el) {
-        const tabMap = {
-          item: 'Items',
-          block: 'Blocks',
-          effect: 'Effects',
-          enchantment: 'Enchantments',
-          entity: 'Entities'
-        }
-
-        for (const key in tabMap) {
-          if (id.endsWith(key)) {
-            activeTab.value = tabMap[key]
-            await nextTick(3)
-            const newEl = document.getElementById(id)
-            if (newEl) {
-              newEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-            }
-            break
-          }
-        }
-        break // 找到就结束循环
+const search = async (val)=>{
+  const keys = Object.keys(itemWithType.value)
+  for(let i =0;i<keys.length;i++){
+    let key = keys[i]
+    console.log(key)
+    if(key.includes(val)){
+      activeTab.value = itemWithType.value[key]
+      router.push({ name: activeTab.value })
+      await nextTick(3)
+      const id = `row-${val}`
+      const newEl = document.getElementById(id)
+      if (newEl) {
+        newEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
+      break
     }
-
   }
 }
 watch(
@@ -114,9 +80,22 @@ watch(
       search(val)
     }
 )
+const onTabChange = (pane) => {
+  router.push({ name: pane.paneName.valueOf() }) // 注意：paneName 是 el-tab-pane 的 name 属性
+}
+onMounted(()=>{
+  activeTab.value='items'
+  router.push({ name: activeTab.value })
+  fetchData()
+})
 </script>
 
 <style scoped>
+.mod-tab{
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  padding-left: 10px;
+}
 :deep(.el-tabs__header .el-tabs__item) {
   background: lightblue;
   font-weight: bold;

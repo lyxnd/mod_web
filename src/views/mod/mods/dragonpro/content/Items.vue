@@ -1,5 +1,5 @@
 <template>
-  <div style="background: transparent !important;overflow-y: auto;height: 100%;">
+  <div style="background: transparent !important;">
     <el-table :data="itemProperty" style="width: 100%;background: transparent" height="100%" border
               :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" >
       <el-table-column prop="name" label="Item"  style="font-weight: bold;font-size: 30px;"  resizable="resizable">

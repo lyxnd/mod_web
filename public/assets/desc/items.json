@@ -1,7 +1,7 @@
 [
   {
     "mouse": {
-      "name": "mouse_item",
+      "name": "mouse",
       "icon": "/assets/icon/item/mouse.png",
       "approach": "kill Shendu",
       "usage": "transform silence into active,and active into silence(which means freeze mob and transform block into an entity)",
@@ -14,7 +14,7 @@
   },
   {
     "ox": {
-      "name": "ox_item",
+      "name": "ox",
       "icon": "/assets/icon/item/ox.png",
       "approach": "kill Shendu",
       "usage": "Give you undefeated power and mining speed",
@@ -27,7 +27,7 @@
   },
   {
     "tiger": {
-      "name": "tiger_item",
+      "name": "tiger",
       "icon": "/assets/icon/item/tiger.png",
       "approach": "kill shendu",
       "usage": "boost xp and make livings aggressive or peaceful",
@@ -40,7 +40,7 @@
   },
   {
     "rabbit": {
-      "name": "rabbit_item",
+      "name": "rabbit",
       "icon": "/assets/icon/item/rabbit.png",
       "usage": "jump higher, run faster",
       "approach": "can be found in chest in some structures",
@@ -53,7 +53,7 @@
   },
   {
     "dragon": {
-      "name": "dragon_item",
+      "name": "dragon",
       "icon": "/assets/icon/item/dragon.png",
       "usage": "angry fire burns everything",
       "approach": "kill shendu",
@@ -66,7 +66,7 @@
   },
   {
     "snake": {
-      "name": "snake_item",
+      "name": "snake",
       "icon": "/assets/icon/item/snake.png",
       "usage": "make you invisible",
       "approach": "can be found in chest in some structures",
@@ -79,7 +79,7 @@
   },
   {
     "horse": {
-      "name": "horse_item",
+      "name": "horse",
       "icon": "/assets/icon/item/horse.png",
       "usage": "heal yourself",
       "approach": "kill shendu",
@@ -92,7 +92,7 @@
   },
   {
     "sheep": {
-      "name": "sheep_item",
+      "name": "sheep",
       "icon": "/assets/icon/item/sheep.png",
       "usage": "back to position",
       "approach": "free the end",
@@ -105,7 +105,7 @@
   },
   {
     "monkey": {
-      "name": "monkey_item",
+      "name": "monkey",
       "icon": "/assets/icon/item/monkey.png",
       "usage": "transform mob into another one",
       "approach": "kill shendu",
@@ -118,7 +118,7 @@
   },
   {
     "chicken": {
-      "name": "chicken_item",
+      "name": "chicken",
       "icon": "/assets/icon/item/chicken.png",
       "usage": "flow up,but not flying ability",
       "approach": "kill shendu",
@@ -131,7 +131,7 @@
   },
   {
     "dog": {
-      "name": "dog_item",
+      "name": "dog",
       "icon": "/assets/icon/item/dog.png",
       "usage": "give you regeneration and absorption effect",
       "approach": "kill shendu",
@@ -144,7 +144,7 @@
   },
   {
     "pig": {
-      "name": "pig_item",
+      "name": "pig",
       "icon": "/assets/icon/item/pig.png",
       "usage": "blasting eyes, break blocks and damage mobs",
       "approach": "kill shendu",
@@ -157,7 +157,7 @@
   },
   {
     "golden_egg": {
-      "name": "golden_egg_item",
+      "name": "golden_egg",
       "icon": "/assets/icon/item/golden_egg.png",
       "usage": "some kind of food with eurpt effect",
       "approach": "can be found in chest in some structures",
@@ -170,7 +170,7 @@
   },
   {
     "xp_pool": {
-      "name": "xp_pool_item",
+      "name": "xp_pool",
       "icon": "/assets/icon/item/xp_pool.png",
       "usage": "store xp and take out",
       "approach": "can only be found in ghost tower or in a maze",
@@ -183,7 +183,7 @@
   },
   {
     "buddha_palm_technique": {
-      "name": "buddha_palm_technique_item",
+      "name": "buddha_palm_technique",
       "icon": "/assets/icon/item/buddha_palm_technique.png",
       "usage": "'summon' buddha_palm_technique(huge hand)",
       "approach": "can be found in chest in some structures",
@@ -196,7 +196,7 @@
   },
   {
     "bony_spur": {
-      "name": "bony_spur_item",
+      "name": "bony_spur",
       "icon": "/assets/icon/item/bony_spur.png",
       "usage": "apply effect after using while have potion in offhand",
       "approach": "can only be found in ghost tower or in maze",
@@ -209,7 +209,7 @@
   },
   {
     "oxhead_axe": {
-      "name": "oxhead_axe_item",
+      "name": "oxhead_axe",
       "icon": "/assets/icon/item/oxhead_axe.png",
       "usage": "push away nearby mobs",
       "approach": "kill oxhead",
@@ -222,7 +222,7 @@
   },
   {
     "dart": {
-      "name": "dart_item",
+      "name": "dart",
       "icon": "/assets/icon/item/dart.png",
       "usage": "throw dart",
       "approach": "craftable and in chest",
@@ -235,7 +235,7 @@
   },
   {
     "dragon_bow": {
-      "name": "dragon_bow_item",
+      "name": "dragon_bow",
       "icon": "/assets/icon/item/dragon_bow.png",
       "usage": "more damage with faster arrow",
       "approach": "can only be found in ghost tower or in maze",
@@ -248,7 +248,7 @@
   },
   {
     "sweepstakes": {
-      "name": "sweepstakes_item",
+      "name": "sweepstakes",
       "icon": "/assets/icon/item/sweepstakes.png",
       "usage": "use on lottery block to get a gift",
       "approach": "craftable and chest",
@@ -261,7 +261,7 @@
   },
   {
     "fire_origin_stone": {
-      "name": "fire_origin_stone_item",
+      "name": "fire_origin_stone",
       "icon": "/assets/icon/item/fire_origin_stone.png",
       "usage": "(in hand chain)",
       "approach": "kill shendu",
@@ -274,7 +274,7 @@
   },
   {
     "water_origin_stone": {
-      "name": "water_origin_stone_item",
+      "name": "water_origin_stone",
       "icon": "/assets/icon/item/water_origin_stone.png",
       "usage": "summon a still water block(in hand chain)",
       "approach": "kill baitza",
@@ -287,7 +287,7 @@
   },
   {
     "wind_origin_stone": {
-      "name": "wind_origin_stone_item",
+      "name": "wind_origin_stone",
       "icon": "/assets/icon/item/wind_origin_stone.png",
       "usage": "push away nearby mobs(in hand chain)",
       "approach": "kill xiaofung",
@@ -300,7 +300,7 @@
   },
   {
     "sky_origin_stone": {
-      "name": "sky_origin_stone_item",
+      "name": "sky_origin_stone",
       "icon": "/assets/icon/item/sky_origin_stone.png",
       "usage": "give you motion(in hand chain)",
       "approach": "kill hsiwu",
@@ -313,7 +313,7 @@
   },
   {
     "mountain_origin_stone": {
-      "name": "mountain_origin_stone_item",
+      "name": "mountain_origin_stone",
       "icon": "/assets/icon/item/mountain_origin_stone.png",
       "usage": "allow you walk in the air(in hand chain)",
       "approach": "kill pokong",
@@ -326,7 +326,7 @@
   },
   {
     "ground_origin_stone": {
-      "name": "ground_origin_stone_item",
+      "name": "ground_origin_stone",
       "icon": "/assets/icon/item/ground_origin_stone.png",
       "usage": "break blocks in line(in hand chain)",
       "approach": "kill daigui",
@@ -339,7 +339,7 @@
   },
   {
     "gravity_origin_stone": {
-      "name": "gravity_origin_stone_item",
+      "name": "gravity_origin_stone",
       "icon": "/assets/icon/item/gravity_origin_stone.png",
       "usage": "control other mobs' position as you want(in hand chain)",
       "approach": "kill tsolan",
@@ -352,7 +352,7 @@
   },
   {
     "lighting_origin_stone": {
-      "name": "lighting_origin_stone_item",
+      "name": "lighting_origin_stone",
       "icon": "/assets/icon/item/lighting_origin_stone.png",
       "usage": "straight lighting attack(in hand chain)",
       "approach": "kill tchangzu",
@@ -365,7 +365,7 @@
   },
   {
     "fire_stick": {
-      "name": "fire_stick_item",
+      "name": "fire_stick",
       "icon": "/assets/icon/item/fire_stick.png",
       "usage": "shoot fire ball",
       "approach": "kill shendu",
@@ -378,7 +378,7 @@
   },
   {
     "water_stick": {
-      "name": "water_stick_item",
+      "name": "water_stick",
       "icon": "/assets/icon/item/water_stick.png",
       "usage": "shoot ice gland(area slowness)",
       "approach": "kill baitza",
@@ -391,7 +391,7 @@
   },
   {
     "wind_stick": {
-      "name": "wind_stick_item",
+      "name": "wind_stick",
       "icon": "/assets/icon/item/wind_stick.png",
       "usage": "shoot wind ball(blow nearby mob up)",
       "approach": "kill xiaofung",
@@ -404,7 +404,7 @@
   },
   {
     "sky_stick": {
-      "name": "sky_stick_item",
+      "name": "sky_stick",
       "icon": "/assets/icon/item/sky_stick.png",
       "usage": "call for sky grace(spawn random mobs)",
       "approach": "kill hsiwu",
@@ -417,7 +417,7 @@
   },
   {
     "ground_stick": {
-      "name": "ground_stick_item",
+      "name": "ground_stick",
       "icon": "/assets/icon/item/ground_stick.png",
       "usage": "shoot stone gland(dig hole in random shape)(no drops)",
       "approach": "kill daigua",
@@ -430,7 +430,7 @@
   },
   {
     "mountain_stick": {
-      "name": "mountain_stick_item",
+      "name": "mountain_stick",
       "icon": "/assets/icon/item/mountain_stick.png",
       "usage": "form a small mountain at random shape",
       "approach": "kill pokong",
@@ -443,7 +443,7 @@
   },
   {
     "gravity_stick": {
-      "name": "gravity_stick_item",
+      "name": "gravity_stick",
       "icon": "/assets/icon/item/gravity_stick.png",
       "usage": "shoot gravity ball(flow up nearby mobs)(hit mob will lose/have gravity)",
       "approach": "kill tsolan",
@@ -456,7 +456,7 @@
   },
   {
     "lighting_stick": {
-      "name": "lighting_stick_item",
+      "name": "lighting_stick",
       "icon": "/assets/icon/item/lighting_stick.png",
       "usage": "shoot lighting ball(spawn lighting on hit pos)",
       "approach": "kill tchangzu",
@@ -469,7 +469,7 @@
   },
   {
     "hand_chain": {
-      "name": "hand_chain_item",
+      "name": "hand_chain",
       "icon": "/assets/icon/item/hand_chain.png",
       "usage": "use devils power if you have their stone",
       "approach": "",
@@ -482,7 +482,7 @@
   },
   {
     "talisman_pocket": {
-      "name": "talisman_pocket_item",
+      "name": "talisman_pocket",
       "icon": "/assets/icon/item/talisman_pocket.png",
       "usage": "use to equip,will enhance your power with talisman inserted",
       "approach": "kill shendu",
@@ -497,7 +497,7 @@
     "globe_fish": {
       "usage": "shoot magic laser",
       "additional": "",
-      "name": "globe_fish_item",
+      "name": "globe_fish",
       "icon": "/assets/icon/item/globe_fish.png",
       "erupt": "",
       "attribute": "",
@@ -509,7 +509,7 @@
     "tally": {
       "usage": "give harmful effects to mobs nearby",
       "additional": "",
-      "name": "tally_item",
+      "name": "tally",
       "icon": "/assets/icon/item/tally.png",
       "erupt": "",
       "attribute": "",
@@ -521,7 +521,7 @@
     "magic_potion": {
       "usage": "give benifical effects to yourself",
       "additional": "",
-      "name": "magic_potion_item",
+      "name": "magic_potion",
       "icon": "/assets/icon/item/magic_potion.png",
       "erupt": "",
       "attribute": "",
@@ -533,7 +533,7 @@
     "glod_gloem_spawner": {
       "usage": "spawn glod gloem",
       "additional": "",
-      "name": "glod_gloem_spawner_item",
+      "name": "glod_gloem_spawner",
       "icon": "/assets/icon/item/glod_gloem_spawner.png",
       "erupt": "",
       "attribute": "",
@@ -545,7 +545,7 @@
     "sword_token": {
       "usage": "activate token magic extractor block to defend fire devild's qi",
       "additional": "",
-      "name": "sword_token_item",
+      "name": "sword_token",
       "icon": "/assets/icon/item/sword_token.png",
       "erupt": "",
       "attribute": "",
@@ -557,7 +557,7 @@
     "calabash_token": {
       "usage": "activate token magic extractor block to defend water devild's qi",
       "additional": "",
-      "name": "calabash_token_item",
+      "name": "calabash_token",
       "icon": "/assets/icon/item/calabash_token.png",
       "erupt": "",
       "attribute": "",
@@ -569,7 +569,7 @@
     "flower_token": {
       "usage": "activate token magic extractor block to defend earth devild's qi",
       "additional": "",
-      "name": "flower_token_item",
+      "name": "flower_token",
       "icon": "/assets/icon/item/flower_token.png",
       "erupt": "",
       "attribute": "",
@@ -581,7 +581,7 @@
     "flute_token": {
       "usage": "activate token magic extractor block to defend sky devild's qi",
       "additional": "",
-      "name": "flute_token_item",
+      "name": "flute_token",
       "icon": "/assets/icon/item/flute_token.png",
       "erupt": "",
       "attribute": "",
@@ -593,7 +593,7 @@
     "lotus_token": {
       "usage": "activate token magic extractor block to defend moon devild's qi",
       "additional": "",
-      "name": "lotus_token_item",
+      "name": "lotus_token",
       "icon": "/assets/icon/item/lotus_token.png",
       "erupt": "",
       "attribute": "",
@@ -605,7 +605,7 @@
     "fan_token": {
       "usage": "activate token magic extractor block to defend wind devild's qi",
       "additional": "",
-      "name": "fan_token_item",
+      "name": "fan_token",
       "icon": "/assets/icon/item/fan_token.png",
       "erupt": "",
       "attribute": "",
@@ -617,7 +617,7 @@
     "drum_token": {
       "usage": "activate token magic extractor block to defend mountain devild's qi",
       "additional": "",
-      "name": "drum_token_item",
+      "name": "drum_token",
       "icon": "/assets/icon/item/drum_token.png",
       "erupt": "",
       "attribute": "",

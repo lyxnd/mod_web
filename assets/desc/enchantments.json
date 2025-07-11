@@ -1,7 +1,7 @@
 [
   {
     "Qi Attack": {
-      "name": "Qi Attack_enchantment",
+      "name": "Qi Attack",
       "icon": "/assets/icon/block/fusion.png",
       "usage": "noop",
       "approach": "enchant table",
@@ -12,7 +12,7 @@
     "mining_protection": {
       "usage": "decrease the block transform rate while mining",
       "additional": "higher risk, higher benifit",
-      "name": "mining_protection_enchantment",
+      "name": "mining_protection",
       "approach": "enchant table"
     }
   },
@@ -20,7 +20,7 @@
     "xp_boost_enchantment": {
       "usage": "boost xp drop with xp_pool item in offhand",
       "additional": "quiet nice enchantment",
-      "name": "xp_boost_enchantment",
+      "name": "xp_boost",
       "approach": "enchant table"
     }
   },
@@ -28,7 +28,7 @@
     "qi_attack_enchantment": {
       "usage": "",
       "additional": "",
-      "name": "qi_attack_enchantment",
+      "name": "qi_attack",
       "approach": "enchant table"
     }
   },
@@ -36,7 +36,7 @@
     "attack_reward_enchantment": {
       "usage": "",
       "additional": "",
-      "name": "attack_reward_enchantment",
+      "name": "attack_reward",
       "approach": "enchant table"
     }
   },
@@ -44,7 +44,7 @@
     "qifield_enchantment": {
       "usage": "",
       "additional": "",
-      "name": "qifield_enchantment",
+      "name": "qifield",
       "approach": "enchant table"
     }
   },
@@ -52,7 +52,7 @@
     "pull_back_enchantment": {
       "usage": "pull yourself back while sneaking and using bow",
       "additional": "",
-      "name": "pull_back_enchantment",
+      "name": "pull_back",
       "approach": "enchant table"
     }
   }

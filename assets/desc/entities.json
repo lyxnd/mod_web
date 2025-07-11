@@ -1,7 +1,7 @@
 [
   {
     "Shen du": {
-      "name": "shen du_entity",
+      "name": "shen du",
       "icon": "/assets/icon/entity/shendu.png",
       "max_hp": "1000",
       "speed": "0.3",
@@ -27,7 +27,7 @@
   },
   {
     "Bai Tza": {
-      "name": "bai tza_entity",
+      "name": "bai tza",
       "icon": "/assets/icon/entity/baitza.png",
       "max_hp": "700",
       "speed": "0.4",
@@ -48,7 +48,7 @@
   },
   {
     "Xiao fung": {
-      "name": "xiao fung_entity",
+      "name": "xiao fung",
       "icon": "/assets/icon/entity/xiaofung.png",
       "max_hp": "900",
       "speed": "0.3",
@@ -69,7 +69,7 @@
   },
   {
     "Hsiwu": {
-      "name": "hsiwu_entity",
+      "name": "hsiwu",
       "icon": "/assets/icon/entity/hsiwu.png",
       "max_hp": "600",
       "speed": "1",
@@ -90,7 +90,7 @@
   },
   {
     "Pokong": {
-      "name": "pokong_entity",
+      "name": "pokong",
       "icon": "/assets/icon/entity/pokong.png",
       "max_hp": "1200",
       "speed": "0.18",
@@ -111,7 +111,7 @@
   },
   {
     "Dai Gui": {
-      "name": "dai gui_entity",
+      "name": "dai gui",
       "icon": "/assets/icon/entity/daigui.png",
       "max_hp": "1000",
       "speed": "0.28",
@@ -132,7 +132,7 @@
   },
   {
     "Tsolan": {
-      "name": "tsolan_entity",
+      "name": "tsolan",
       "icon": "/assets/icon/entity/tsolan.png",
       "max_hp": "700",
       "speed": "0.6",
@@ -153,7 +153,7 @@
   },
   {
     "Tchangzu": {
-      "name": "tchangzu_entity",
+      "name": "tchangzu",
       "icon": "/assets/icon/entity/tchangzu.png",
       "max_hp": "900",
       "speed": "0.28",
@@ -174,7 +174,7 @@
   },
   {
     "ShadowKhan": {
-      "name": "shadowkhan_entity",
+      "name": "shadowkhan",
       "icon": "/assets/icon/entity/shadowkhan.png",
       "max_hp": "80",
       "speed": "0.6",
@@ -195,7 +195,7 @@
   },
   {
     "SNP_Zombie": {
-      "name": "snp zombie_entity",
+      "name": "snp zombie",
       "icon": "/assets/icon/entity/snp_zombie.png",
       "max_hp": "30",
       "speed": "0.23",
@@ -214,7 +214,7 @@
   },
   {
     "lighting_skeleton": {
-      "name": "lighting skeleton_entity",
+      "name": "lighting skeleton",
       "icon": "/assets/icon/entity/lighting_skeleton.png",
       "max_hp": "20",
       "speed": "0.25",
@@ -233,7 +233,7 @@
   },
   {
     "Jacker": {
-      "name": "jacker_entity",
+      "name": "jacker",
       "icon": "/assets/icon/entity/jacker.png",
       "max_hp": "60",
       "speed": "0.6",
@@ -255,7 +255,7 @@
   },
   {
     "Mattery_Spider": {
-      "name": "mattery spider_entity",
+      "name": "mattery spider",
       "icon": "/assets/icon/entity/mattery_spider.png",
       "max_hp": "30",
       "speed": "0.24",
@@ -274,7 +274,7 @@
   },
   {
     "Lost_Creeper": {
-      "name": "lost creeper_entity",
+      "name": "lost creeper",
       "icon": "/assets/icon/entity/lost_creeper.png",
       "max_hp": "40",
       "speed": "0.23",
@@ -291,7 +291,7 @@
   },
   {
     "Thief": {
-      "name": "thief_entity",
+      "name": "thief",
       "icon": "/assets/icon/entity/thief.png",
       "max_hp": "50",
       "speed": "0.5",
@@ -311,7 +311,7 @@
   },
   {
     "Explosive_Blaze": {
-      "name": "explosive blaze_entity",
+      "name": "explosive blaze",
       "icon": "/assets/icon/entity/explosive_blaze.png",
       "max_hp": "60",
       "speed": "0.25",
@@ -331,7 +331,7 @@
   },
   {
     "Wasted_Enderman": {
-      "name": "wasted enderman_entity",
+      "name": "wasted enderman",
       "icon": "/assets/icon/entity/wasted_enderman.png",
       "max_hp": "75",
       "speed": "0.33",
@@ -350,7 +350,7 @@
   },
   {
     "Blood_Zombie": {
-      "name": "blood zombie_entity",
+      "name": "blood zombie",
       "icon": "/assets/icon/entity/blood_zombie.png",
       "max_hp": "45",
       "speed": "0.23",
@@ -369,7 +369,7 @@
   },
   {
     "Infectious_Zombie": {
-      "name": "infectious zombie_entity",
+      "name": "infectious zombie",
       "icon": "/assets/icon/entity/infectious_zombie.png",
       "max_hp": "55",
       "speed": "0.28",
@@ -390,7 +390,7 @@
   },
   {
     "Golem_Zombie": {
-      "name": "golem zombie_entity",
+      "name": "golem zombie",
       "icon": "/assets/icon/entity/golem_zombie.png",
       "max_hp": "150",
       "speed": "0.23",
@@ -410,7 +410,7 @@
   },
   {
     "Wasted_Skeleton": {
-      "name": "wasted skeleton_entity",
+      "name": "wasted skeleton",
       "icon": "/assets/icon/entity/wasted_skeleton.png",
       "max_hp": "45",
       "speed": "0.28",
@@ -430,7 +430,7 @@
   },
   {
     "Scientist_Zombie": {
-      "name": "scientist zombie_entity",
+      "name": "scientist zombie",
       "icon": "/assets/icon/entity/scientist_zombie.png",
       "max_hp": "85",
       "speed": "0.23",
@@ -450,7 +450,7 @@
   },
   {
     "Dancer": {
-      "name": "dancer_entity",
+      "name": "dancer",
       "icon": "/assets/icon/entity/dancer.png",
       "max_hp": "70",
       "speed": "0.4",

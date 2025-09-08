@@ -3,71 +3,30 @@
     <div>
       <el-container>
         <el-header style="border: green 2px dotted" height="auto">
-          <h1 style="font-weight: bolder;font-size: 32px;color: blue">
-            Dream World & Mixed Dream World & Shadow Kingdom
-          </h1>
-          <el-card class="header">
-            <h2 class="title">
-              Dream World & Mixed Dream World
-            </h2>
-            <p class="info">
-              * When you are trying to sleep, pay attention, you will be teleported to one of the two dimensions at a
-              low rate,<br>
-              * the first one is almost the same as the overworld, which means once you find a treasure, you can take
-              the another one in this through dreaming.<br>
-              * The second is a mixed world,in another word, disordered. you will probably find end_city or ghost_tower
-              here.<br>
-            </p>
-            <h2 class="title">Attention</h2>
-            <p class="waring">
-              * Without sheep talisman in offhand, during teleporting to the dimension you will leave some item and when
-              you wake up,
-              you'll take them back.<br>
-              * However, if you dead in the dimension you will lose the left items. Oh by the way, you will be given
-              some items too. for it's a dream.<br>
-              * In some approach, you may keep the given items while leaving, But how?
-              * So kill ender dragon to take the sheep talisman would be a better choice. or put items into chests and
-              dig a hole to waiting for wake up.
-            </p>
-          </el-card>
-          <el-card class="header">
-            <h2 class="title">
-              Shadow Kingdom
-            </h2>
-            <p class="info">
-             <br>
-            </p>
-          </el-card>
+
         </el-header>
         <el-main class="container_main">
-          <el-card class="dimension_card">
-            <template #header>
-              <div class="card-header">
-                <h1 class="title">Dream World (Detail)</h1>
-                  ...
-              </div>
-            </template>
+          <el-card class="header" v-for="dimension in dimensions">
+            <h1 style="font-weight: bolder;font-size: 32px;color: blue">
+              {{dimension.name}}
+            </h1>
+            <h2 class="title">
+              {{dimension.title}}
+            </h2>
+            <p class="info" v-for="info in dimension.introduction">
+              * {{info}}<br>
+            </p>
+            <h2 class="title" v-if="dimension.warning.length>0">Attention</h2>
+            <p class="waring" v-for="warn in dimension.warning">
+              * {{warn}}<br>
+            </p>
+            <h2 class="title" v-if="dimension.detail.length>0">Detail</h2>
+            <p class="detail" v-for="detail in dimension.detail">
+              {{detail}}
+            </p>
           </el-card>
 
-          <el-card class="dimension_card">
-            <template #header>
-              <div class="card-header">
-                <h1 class="title">Mixed Dream World (Detail)</h1>
-                  ...
-<!--              TODO  -->
-              </div>
-            </template>
-          </el-card>
 
-          <el-card class="dimension_card">
-            <template #header>
-              <div class="card-header">
-                <h1 class="title">Shadow Kingdom (Detail)</h1>
-                  ...
-<!--              TODO  -->
-              </div>
-            </template>
-          </el-card>
         </el-main>
       </el-container>
     </div>
@@ -75,6 +34,18 @@
 </template>
 
 <script setup>
+import {getCurrentInstance, onMounted, ref} from "vue";
+import {fetchDimensions} from "@/util/file_reader.js";
+
+const {appContext} = getCurrentInstance();
+const globalVar = appContext.config.globalProperties.$globalVar;
+const dimensions=ref({})
+onMounted(() => {
+  fetchDimensions(globalVar.lang).then(result => {
+    dimensions.value = result.value;
+    console.log(dimensions.value)
+  });
+})
 </script>
 
 <style scoped>

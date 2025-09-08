@@ -111,8 +111,9 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue";
+import {ref, onMounted, getCurrentInstance} from "vue";
 import ImagePreviewDialog from "@/components/ImagePreviewDialog.vue";
+import {fetchItems} from "@/util/file_reader.js"
 const itemProperty = ref([]);
 const previewDialog = ref(null); // 预览组件引用
 const previewImages = ref([]); // 当前要预览的图片
@@ -120,41 +121,14 @@ const openPreview = (images) => {
   previewImages.value = images; // 设置当前要预览的图片
   previewDialog.value.openDialog(); // 调用子组件的方法打开弹窗
 };
+const { appContext } = getCurrentInstance();
+const globalVar = appContext.config.globalProperties.$globalVar;
+onMounted(() => {
+  fetchItems(globalVar.lang).then(result => {
+    itemProperty.value = result.value;
+  });
+});
 
-const fetchData = async () => {
-  try {
-    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/items.json`);
-    const jsonData = await response.json();
-    const baseUrl = import.meta.env.BASE_URL
-    itemProperty.value = jsonData.map(item => {
-      const key = Object.keys(item)[0];
-      // 取出原始 additionalImg，可能是数组，也可能不存在
-      const rawImgs = item[key].AdditionalImg || item[key].additionalImg || [];
-
-      // 处理图片数组，给相对路径加前缀
-      const fixedImgs = Array.isArray(rawImgs)
-          ? rawImgs.map(img => (/^https?:\/\//.test(img) ? img : baseUrl + img.replace(/^\/+/, '')))
-          : [];
-      let icons = item[key].Icon || item[key].icon || '';
-      icons=baseUrl+icons
-      return {
-        name: item[key].Name || item[key].name,
-        icon: icons,
-        approach: item[key].Approach || item[key].approach,
-        usage: item[key].Usage || item[key].usage,
-        sneak: item[key].Sneak || item[key].sneak,
-        erupt: item[key].Erupt || item[key].erupt,
-        attribute: item[key].Attribute || item[key].attribute,
-        additional: item[key].Additional || item[key].additional,
-        additionalImg: fixedImgs
-      };
-    });
-
-  } catch (error) {
-    console.error("加载 JSON 失败:", error);
-  }
-};
-onMounted(fetchData);
 </script>
 
 <style scoped>

@@ -1,0 +1,173 @@
+[
+  {
+    "erupt": {
+      "name": "爆发",
+      "icon": "/assets/icon/effect/erupt.png",
+      "usage": "增强某些物品的能力",
+      "approach": "食用“金蛋”",
+      "additional": "真的？"
+    }
+  },
+  {
+    "freeze": {
+      "usage": "冻结生物的视线和行动",
+      "additional": "看起来并没有完全冻结",
+      "name": "冻结",
+      "icon": "/assets/icon/effect/freeze.png",
+      "approach": "使用鼠标护符或被某些生物攻击"
+    }
+  },
+  {
+    "ghost_in_body": {
+      "usage": "将你周围的黑气转化为生物",
+      "additional": "可能是获得法杖的好方法",
+      "name": "身体附灵",
+      "icon": "/assets/icon/effect/ghost_in_body.png",
+      "approach": "被诅咒"
+    }
+  },
+  {
+    "flying": {
+      "usage": "让你像创造模式一样飞行",
+      "additional": "注意持续时间",
+      "name": "飞行",
+      "icon": "/assets/icon/effect/flying.png",
+      "approach": "天空源石"
+    }
+  },
+  {
+    "disorder": {
+      "usage": "失控（行动、视线）",
+      "additional": "无",
+      "name": "混乱",
+      "icon": "/assets/icon/effect/disorder.png",
+      "approach": "被诅咒或被生物攻击"
+    }
+  },
+  {
+    "putrefy": {
+      "usage": "减少你物品的耐久（库存中所有可破坏物品）",
+      "additional": "可能是本模组中最糟的效果",
+      "name": "腐烂",
+      "icon": "/assets/icon/effect/putrefy.png",
+      "approach": "被诅咒或被生物攻击"
+    }
+  },
+  {
+    "talisman_conflict": {
+      "usage": "将所有不幸带给你",
+      "additional": "口袋里没有虎护符，你将被护符的力量摧毁",
+      "name": "护符冲突",
+      "icon": "/assets/icon/effect/talisman_conflict.png",
+      "approach": "口袋里没有虎护符"
+    }
+  },
+  {
+    "gravity_plus": {
+      "usage": "增加重力，会压碎你的身体，无法飞高",
+      "additional": "如果想飞行时战斗，请注意",
+      "name": "重力增强",
+      "icon": "/assets/icon/effect/gravity_plus.png",
+      "approach": "tsolan 或 tsolan 的气，或被诅咒"
+    }
+  },
+  {
+    "falling_protection": {
+      "usage": "免受坠落伤害",
+      "additional": "也许鸡护符也能实现",
+      "name": "坠落保护",
+      "icon": "/assets/icon/effect/falling_protection.png",
+      "approach": "山源石"
+    }
+  },
+  {
+    "press_protection": {
+      "usage": "方块中无敌",
+      "additional": "可能可以穿过方块",
+      "name": "压制保护",
+      "icon": "/assets/icon/effect/press_protection.png",
+      "approach": "地源石"
+    }
+  },
+  {
+    "moon_walk": {
+      "usage": "在空中行走时在脚下生成方块",
+      "additional": "如果我能飞，这个是干什么的？",
+      "name": "月行",
+      "icon": "/assets/icon/effect/moon_walk.png",
+      "approach": ""
+    }
+  },
+  {
+    "leigod_grace": {
+      "usage": "用雷攻击附近的生物",
+      "additional": "嗯，会不会连掉落也被雷劈？",
+      "name": "雷神恩赐",
+      "icon": "/assets/icon/effect/leigod_grace.png",
+      "approach": ""
+    }
+  },
+  {
+    "paralysis": {
+      "usage": "只能移动",
+      "additional": "锁定你的位置",
+      "name": "麻痹",
+      "icon": "/assets/icon/effect/paralysis.png",
+      "approach": "可能被闪电攻击"
+    }
+  },
+  {
+    "nightmare": {
+      "usage": "降低最大生命值，短时间无法睡觉",
+      "additional": "再次死亡会处理此效果",
+      "name": "噩梦",
+      "icon": "/assets/icon/effect/nightmare.png",
+      "approach": "在梦境维度死亡"
+    }
+  },
+  {
+    "asleep": {
+      "usage": "让生物进入睡眠状态",
+      "additional": "和冻结有什么区别？",
+      "name": "沉睡",
+      "icon": "/assets/icon/effect/asleep.png",
+      "approach": "羊护符"
+    }
+  },
+  {
+    "flower_grace": {
+      "usage": "短时间内带来无敌力量和一些机会",
+      "additional": "祝史蒂夫长寿！！！",
+      "name": "花之恩赐",
+      "icon": "/assets/icon/effect/flower_grace.png",
+      "approach": "狗护符"
+    }
+  },
+  {
+    "scared": {
+      "usage": "随机移动",
+      "additional": "这很恶心吗？",
+      "name": "惊恐",
+      "icon": "/assets/icon/effect/scared.png",
+      "approach": "被牛头怪攻击"
+    }
+  },
+  {
+    "unlucky": {
+      "usage": "坏事将降临到你身上",
+      "additional": "还不够糟",
+      "name": "不幸",
+      "icon": "/assets/icon/effect/unlucky.png",
+      "approach": "杀小偷或被诅咒"
+    }
+  },
+  {
+    "infection": {
+      "usage": "召唤复仇者帮助你复仇",
+      "additional": "非常致命",
+      "name": "感染",
+      "icon": "/assets/icon/effect/infection.png",
+      "approach": "某些生物技能或接触浓水"
+    }
+  }
+]

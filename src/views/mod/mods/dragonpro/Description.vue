@@ -8,14 +8,14 @@
     </div>
 
     <el-tabs v-model="activeTab" @tab-click="onTabChange" class="mod-tab" type="card">
-      <el-tab-pane label="Items" name="items" />
-      <el-tab-pane label="Blocks" name="blocks" />
-      <el-tab-pane label="Entities" name="entities" />
-      <el-tab-pane label="Enchantments" name="enchantments" />
-      <el-tab-pane label="Effects" name="effects" />
-      <el-tab-pane label="Dimensions" name="dimensions" />
-      <el-tab-pane label="Events" name="events" />
-      <el-tab-pane label="Others" name="others" />
+      <el-tab-pane label="Items" name="items"/>
+      <el-tab-pane label="Blocks" name="blocks"/>
+      <el-tab-pane label="Entities" name="entities"/>
+      <el-tab-pane label="Enchantments" name="enchantments"/>
+      <el-tab-pane label="Effects" name="effects"/>
+      <el-tab-pane label="Dimensions" name="dimensions"/>
+      <el-tab-pane label="Events" name="events"/>
+      <el-tab-pane label="Others" name="others"/>
     </el-tabs>
     <div class="page-component__scroll" style="overflow-y: auto;height:100vh">
       <el-backtop target=".page-component__scroll" :bottom="100" :right="100" :visibility-height="250">
@@ -31,42 +31,40 @@
       "
         >
           <el-icon :size="30" color="#00D9FF" style="background-color: #C2FFDD;padding:0;margin: 0;">
-            <Top />
+            <Top/>
           </el-icon>
         </div>
       </el-backtop>
-      <router-view />
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script setup>
-import {nextTick, onMounted, ref, watch} from "vue";
+import {getCurrentInstance, nextTick, onMounted, ref, watch} from "vue";
 import {Search, Top} from "@element-plus/icons-vue";
 import router from "@/router/index.js";
+import {fetchStaffs} from "@/util/file_reader.js";
 
 const regex = ref('')
 const activeTab = ref('Items')
 
-const itemWithType=ref({})
-const fetchData=async ()=>{
-  const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/staff_list.json`);
-  itemWithType.value = await response.json();
-}
+const itemWithType = ref({})
+const {appContext} = getCurrentInstance();
+const globalVar = appContext.config.globalProperties.$globalVar;
 
-const search = async (val)=>{
+const search = async (val) => {
   const keys = Object.keys(itemWithType.value)
-  for(let i =0;i<keys.length;i++){
+  for (let i = 0; i < keys.length; i++) {
     let key = keys[i]
-    console.log(key)
-    if(key.includes(val)){
+    if (key.includes(val)) {
       activeTab.value = itemWithType.value[key]
-      router.push({ name: activeTab.value })
+      router.push({name: activeTab.value})
       await nextTick(3)
       const id = `row-${val}`
       const newEl = document.getElementById(id)
       if (newEl) {
-        newEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        newEl.scrollIntoView({behavior: 'smooth', block: 'center'})
       }
       break
     }
@@ -81,21 +79,24 @@ watch(
     }
 )
 const onTabChange = (pane) => {
-  router.push({ name: pane.paneName.valueOf() }) // 注意：paneName 是 el-tab-pane 的 name 属性
+  router.push({name: pane.paneName.valueOf()}) // 注意：paneName 是 el-tab-pane 的 name 属性
 }
-onMounted(()=>{
-  activeTab.value='items'
-  router.push({ name: activeTab.value })
-  fetchData()
+onMounted(() => {
+  activeTab.value = 'items'
+  router.push({name: activeTab.value})
+  fetchStaffs(globalVar.lang).then(result => {
+    itemWithType.value = result.value;
+  });
 })
 </script>
 
 <style scoped>
-.mod-tab{
+.mod-tab {
   display: flex;
   justify-content: center; /* 水平居中 */
   padding-left: 10px;
 }
+
 :deep(.el-tabs__header .el-tabs__item) {
   background: lightblue;
   font-weight: bold;

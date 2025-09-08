@@ -1,0 +1,628 @@
+[
+  {
+    "mouse": {
+      "name": "鼠",
+      "icon": "/assets/icon/item/mouse.png",
+      "approach": "击杀圣主",
+      "usage": "将静止转为活跃，活跃转为静止（意味着冻结生物并将方块变为实体）",
+      "sneak": "（在护符口袋中）免疫冻结效果，并有机会冻结攻击者",
+      "erupt": "区域转换（所有生物冻结并方块恢复为原状）",
+      "attribute": "",
+      "additional": "在方块转换期间会掉落物品；某些强力生物无法冻结",
+      "additionalImg": []
+    }
+  },
+  {
+    "ox": {
+      "name": "牛",
+      "icon": "/assets/icon/item/ox.png",
+      "approach": "击杀圣主",
+      "usage": "给予你无敌力量和采矿速度",
+      "sneak": "（在护符口袋中）几乎无限的力量和急速效果",
+      "erupt": "高级力量和采矿速度",
+      "attribute": "",
+      "additional": "非常强力",
+      "additionalImg": []
+    }
+  },
+  {
+    "tiger": {
+      "name": "虎",
+      "icon": "/assets/icon/item/tiger.png",
+      "approach": "击杀圣主",
+      "usage": "增加经验，并使生物变得攻击性或和平性",
+      "sneak": "（在护符口袋中）平衡十二护符的力量",
+      "erupt": "进一步提升经验获取",
+      "attribute": "",
+      "additional": "谁会需要它来生存？",
+      "additionalImg": []
+    }
+  },
+  {
+    "rabbit": {
+      "name": "兔",
+      "icon": "/assets/icon/item/rabbit.png",
+      "usage": "跳得更高，跑得更快",
+      "approach": "可以在某些建筑的箱子中找到",
+      "attribute": "",
+      "additional": "",
+      "sneak": "（在护符口袋中）无限速度和跳跃效果",
+      "erupt": "更高等级",
+      "additionalImg": []
+    }
+  },
+  {
+    "dragon": {
+      "name": "龙",
+      "icon": "/assets/icon/item/dragon.png",
+      "usage": "愤怒的火焰烧尽一切",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "请记住“所有一切”也包括你自己，也许有办法抵消火焰（手持冰块）",
+      "sneak": "（在护符口袋中）增强猪护符功能",
+      "erupt": "更强的力量",
+      "additionalImg": []
+    }
+  },
+  {
+    "snake": {
+      "name": "蛇",
+      "icon": "/assets/icon/item/snake.png",
+      "usage": "让你隐身",
+      "approach": "可以在某些建筑的箱子中找到",
+      "attribute": "",
+      "additional": "这是否有点不平衡（在护符口袋中）",
+      "sneak": "（在护符口袋中）隐身，8格范围内的生物可能不会攻击你",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "horse": {
+      "name": "马",
+      "icon": "/assets/icon/item/horse.png",
+      "usage": "治疗自己",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "",
+      "sneak": "（在护符口袋中）免疫所有有害效果",
+      "erupt": "更强的治疗并移除有害效果",
+      "additionalImg": []
+    }
+  },
+  {
+    "sheep": {
+      "name": "羊",
+      "icon": "/assets/icon/item/sheep.png",
+      "usage": "返回位置",
+      "approach": "解放末地",
+      "attribute": "",
+      "additional": "按 . 保存位置",
+      "sneak": "传送后交换位置；（在护符口袋中）...",
+      "erupt": "潜行状态下灵魂出窍并返回位置（不受维度限制）",
+      "additionalImg": []
+    }
+  },
+  {
+    "monkey": {
+      "name": "猴",
+      "icon": "/assets/icon/item/monkey.png",
+      "usage": "将生物变为另一种生物",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "",
+      "sneak": "（在护符口袋中）有机会将攻击者变为另一种生物",
+      "erupt": "区域转换（变为铁傀儡）",
+      "additionalImg": []
+    }
+  },
+  {
+    "chicken": {
+      "name": "鸡",
+      "icon": "/assets/icon/item/chicken.png",
+      "usage": "上浮，但不具备飞行能力",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "某种速度下可能获得飞行能力",
+      "sneak": "（在护符口袋中）允许飞行",
+      "erupt": "让被锁定的生物浮起",
+      "additionalImg": []
+    }
+  },
+  {
+    "dog": {
+      "name": "狗",
+      "icon": "/assets/icon/item/dog.png",
+      "usage": "给予你再生和吸收效果",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "最佳生存工具",
+      "sneak": "（在护符口袋中）无限抗性和再生效果",
+      "erupt": "花之恩泽，长寿有你",
+      "additionalImg": []
+    }
+  },
+  {
+    "pig": {
+      "name": "猪",
+      "icon": "/assets/icon/item/pig.png",
+      "usage": "爆裂之眼，破坏方块并对生物造成伤害",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "激光可能无法正确显示，请见谅",
+      "sneak": "（在护符口袋中）熔炼你正在挖掘的方块",
+      "erupt": "真正的爆裂之眼，破坏方块并对直线上的生物造成伤害",
+      "additionalImg": []
+    }
+  },
+  {
+    "golden_egg": {
+      "name": "金蛋",
+      "icon": "/assets/icon/item/golden_egg.png",
+      "usage": "一种带有爆发效果的食物",
+      "approach": "可以在某些建筑的箱子中找到",
+      "attribute": "",
+      "additional": "美味食物，尽量多吃",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "xp_pool": {
+      "name": "经验池",
+      "icon": "/assets/icon/item/xp_pool.png",
+      "usage": "储存经验并取出",
+      "approach": "只能在幽灵塔或迷宫中找到",
+      "attribute": "不可破坏，但不耐火",
+      "additional": "有时在手持并用经验加成附魔时还能增加经验和提升经验掉落",
+      "sneak": "",
+      "erupt": "召唤经验实体将所有生物吸近",
+      "additionalImg": []
+    }
+  },
+  {
+    "buddha_palm_technique": {
+      "name": "佛掌术",
+      "icon": "/assets/icon/item/buddha_palm_technique.png",
+      "usage": "‘召唤’佛掌术（巨大之手）",
+      "approach": "可以在某些建筑的箱子中找到",
+      "attribute": "",
+      "additional": "使用时小心（你想杀死手下的所有生物吗？）",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "bony_spur": {
+      "name": "骨刺",
+      "icon": "/assets/icon/item/bony_spur.png",
+      "usage": "使用后，如果副手有药水则触发效果",
+      "approach": "只能在幽灵塔或迷宫中找到",
+      "attribute": "击杀生物后增加攻击伤害",
+      "additional": "真实增加？(y=ln(x+1)+20+2,x>500)(y=0.04x+2,x<=500)",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "oxhead_axe": {
+      "name": "牛头斧",
+      "icon": "/assets/icon/item/oxhead_axe.png",
+      "usage": "将附近生物推开",
+      "approach": "击杀牛头怪",
+      "attribute": "高伤害，攻击速度更快",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "dart": {
+      "name": "飞镖",
+      "icon": "/assets/icon/item/dart.png",
+      "usage": "投掷飞镖",
+      "approach": "可制作，也可在箱子中找到",
+      "attribute": "",
+      "additional": "非常有用且易于制作",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "dragon_bow": {
+      "name": "龙弓",
+      "icon": "/assets/icon/item/dragon_bow.png",
+      "usage": "造成更多伤害且箭更快",
+      "approach": "只能在幽灵塔或迷宫中找到",
+      "attribute": "箭矢会更快",
+      "additional": "",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "sweepstakes": {
+      "name": "抽奖券",
+      "icon": "/assets/icon/item/sweepstakes.png",
+      "usage": "用于抽奖方块获取礼物",
+      "approach": "可制作，箱子中可获取",
+      "attribute": "",
+      "additional": "甚至护符也可能成为礼物",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "fire_origin_stone": {
+      "name": "火源石",
+      "icon": "/assets/icon/item/fire_origin_stone.png",
+      "usage": "（手链中使用）",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "",
+      "sneak": "火焰抗性",
+      "erupt": "吸收周围的火焰和熔岩",
+      "additionalImg": []
+    }
+  },
+  {
+    "water_origin_stone": {
+      "name": "水源石",
+      "icon": "/assets/icon/item/water_origin_stone.png",
+      "usage": "召唤静止水方块（手链中使用）",
+      "approach": "击杀拜扎",
+      "attribute": "",
+      "additional": "",
+      "sneak": "允许在水中呼吸",
+      "erupt": "吸收周围的水",
+      "additionalImg": []
+    }
+  },
+  {
+    "wind_origin_stone": {
+      "name": "风源石",
+      "icon": "/assets/icon/item/wind_origin_stone.png",
+      "usage": "推开附近生物（手链中使用）",
+      "approach": "击杀小风",
+      "attribute": "",
+      "additional": "",
+      "sneak": "将附近生物拉近",
+      "erupt": "召唤龙卷风",
+      "additionalImg": []
+    }
+  },
+  {
+    "sky_origin_stone": {
+      "name": "天空源石",
+      "icon": "/assets/icon/item/sky_origin_stone.png",
+      "usage": "赋予你运动能力（手链中使用）",
+      "approach": "击杀西乌",
+      "attribute": "",
+      "additional": "",
+      "sneak": "赋予飞行效果90秒，但有60秒冷却",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "mountain_origin_stone": {
+      "name": "山源石",
+      "icon": "/assets/icon/item/mountain_origin_stone.png",
+      "usage": "允许你在空中行走（手链中使用）",
+      "approach": "击杀破空",
+      "attribute": "",
+      "additional": "",
+      "sneak": "给予自己跌落保护",
+      "erupt": "赋予你山之恩泽",
+      "additionalImg": []
+    }
+  },
+  {
+    "ground_origin_stone": {
+      "name": "地源石",
+      "icon": "/assets/icon/item/ground_origin_stone.png",
+      "usage": "沿直线破坏方块（手链中使用）",
+      "approach": "击杀带鬼",
+      "attribute": "",
+      "additional": "",
+      "sneak": "给予下压保护",
+      "erupt": "在地中移动（按Shift下行）（有时可能不如预期）",
+      "additionalImg": []
+    }
+  },
+  {
+    "gravity_origin_stone": {
+      "name": "重力源石",
+      "icon": "/assets/icon/item/gravity_origin_stone.png",
+      "usage": "按你所想控制其他生物的位置（手链中使用）",
+      "approach": "击杀托桑",
+      "attribute": "",
+      "additional": "",
+      "sneak": "使你拥有或移除重力",
+      "erupt": "改变月相释放魔气",
+      "additionalImg": []
+    }
+  },
+  {
+    "lighting_origin_stone": {
+      "name": "雷源石",
+      "icon": "/assets/icon/item/lighting_origin_stone.png",
+      "usage": "直线雷击攻击（手链中使用）",
+      "approach": "击杀长祖",
+      "attribute": "",
+      "additional": "",
+      "sneak": "对附近生物施加麻痹效果并造成一定伤害",
+      "erupt": "赋予雷之恩泽（会攻击附近生物）",
+      "additionalImg": []
+    }
+  },
+  {
+    "fire_stick": {
+      "name": "火杖",
+      "icon": "/assets/icon/item/fire_stick.png",
+      "usage": "发射火球",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "这可能并不是武器",
+      "sneak": "",
+      "erupt": "发射蓄力火球（更多火焰）",
+      "additionalImg": []
+    }
+  },
+  {
+    "water_stick": {
+      "name": "水杖",
+      "icon": "/assets/icon/item/water_stick.png",
+      "usage": "发射冰球（造成区域减速）",
+      "approach": "击杀拜扎",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "发射蓄力冰球（造成区域冻结）",
+      "additionalImg": []
+    }
+  },
+  {
+    "wind_stick": {
+      "name": "风杖",
+      "icon": "/assets/icon/item/wind_stick.png",
+      "usage": "发射风球（将附近生物吹起）",
+      "approach": "击杀小风",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "发射蓄力风球（生成龙卷风）",
+      "additionalImg": []
+    }
+  },
+  {
+    "sky_stick": {
+      "name": "天空杖",
+      "icon": "/assets/icon/item/sky_stick.png",
+      "usage": "召唤天空恩泽（生成随机生物）",
+      "approach": "击杀西乌",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "召唤真正的天空恩泽（仅生成铁傀儡）",
+      "additionalImg": []
+    }
+  },
+  {
+    "ground_stick": {
+      "name": "地杖",
+      "icon": "/assets/icon/item/ground_stick.png",
+      "usage": "发射石球（随机形状挖洞，无掉落）",
+      "approach": "击杀带瓜",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "发射蓄力石球（按特定形状挖洞，有掉落）",
+      "additionalImg": []
+    }
+  },
+  {
+    "mountain_stick": {
+      "name": "山杖",
+      "icon": "/assets/icon/item/mountain_stick.png",
+      "usage": "随机形状形成小山",
+      "approach": "击杀破空",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "填充空洞",
+      "additionalImg": []
+    }
+  },
+  {
+    "gravity_stick": {
+      "name": "重力杖",
+      "icon": "/assets/icon/item/gravity_stick.png",
+      "usage": "发射重力球（使附近生物上浮，击中生物会失去/获得重力）",
+      "approach": "击杀托桑",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "发射蓄力重力球（对附近生物施加重力增强效果）",
+      "additionalImg": []
+    }
+  },
+  {
+    "lighting_stick": {
+      "name": "雷杖",
+      "icon": "/assets/icon/item/lighting_stick.png",
+      "usage": "发射雷球（在击中位置生成闪电）",
+      "approach": "击杀长祖",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": "发射蓄力雷球（在击中位置和附近生物生成闪电）",
+      "additionalImg": []
+    }
+  },
+  {
+    "hand_chain": {
+      "name": "手链",
+      "icon": "/assets/icon/item/hand_chain.png",
+      "usage": "如果你拥有相应的石头，则使用恶魔之力",
+      "approach": "",
+      "attribute": "",
+      "additional": "按B键先选择",
+      "sneak": "根据你选择的石头效果而定",
+      "erupt": "根据你选择的石头效果而定",
+      "additionalImg": []
+    }
+  },
+  {
+    "talisman_pocket": {
+      "name": "护符袋",
+      "icon": "/assets/icon/item/talisman_pocket.png",
+      "usage": "用于装备，可插入护符提升你的能力",
+      "approach": "击杀圣主",
+      "attribute": "",
+      "additional": "注意平衡；",
+      "sneak": "",
+      "erupt": "",
+      "additionalImg": []
+    }
+  },
+  {
+    "globe_fish": {
+      "name": "球形鱼",
+      "icon": "/assets/icon/item/globe_fish.png",
+      "usage": "发射魔法激光",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "tally": {
+      "name": "符木",
+      "icon": "/assets/icon/item/tally.png",
+      "usage": "对附近生物施加有害效果",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "magic_potion": {
+      "name": "魔法药水",
+      "icon": "/assets/icon/item/magic_potion.png",
+      "usage": "给予自己有益效果",
+      "approach": "击杀女巫",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "glod_gloem_spawner": {
+      "name": "金傀儡生成器",
+      "icon": "/assets/icon/item/glod_gloem_spawner.png",
+      "usage": "生成金傀儡",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "sword_token": {
+      "name": "剑符",
+      "icon": "/assets/icon/item/sword_token.png",
+      "usage": "激活符魔提取器方块以防御火恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "calabash_token": {
+      "name": "葫芦符",
+      "icon": "/assets/icon/item/calabash_token.png",
+      "usage": "激活符魔提取器方块以防御水恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "flower_token": {
+      "name": "花符",
+      "icon": "/assets/icon/item/flower_token.png",
+      "usage": "激活符魔提取器方块以防御土恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "flute_token": {
+      "name": "笛符",
+      "icon": "/assets/icon/item/flute_token.png",
+      "usage": "激活符魔提取器方块以防御天空恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "lotus_token": {
+      "name": "莲符",
+      "icon": "/assets/icon/item/lotus_token.png",
+      "usage": "激活符魔提取器方块以防御月恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "fan_token": {
+      "name": "扇符",
+      "icon": "/assets/icon/item/fan_token.png",
+      "usage": "激活符魔提取器方块以防御风恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  },
+  {
+    "drum_token": {
+      "name": "鼓符",
+      "icon": "/assets/icon/item/drum_token.png",
+      "usage": "激活符魔提取器方块以防御山恶魔气",
+      "approach": "可制作",
+      "attribute": "",
+      "additional": "",
+      "sneak": "",
+      "erupt": ""
+    }
+  }
+]

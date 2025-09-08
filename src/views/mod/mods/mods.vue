@@ -2,7 +2,6 @@
   <div id="package">
     <nav id="headers" v-if="shown">
       <router-link to="/mc/mods/dragonpro" @click="hide">Shadow Dragon</router-link>
-      <router-link to="/mc/mods/shadowdragon" @click="hide">DragonPro</router-link>
     </nav>
 
     <div id="modShow">
@@ -52,7 +51,6 @@ export default {
 
     // 在路由更新前执行操作
     onBeforeRouteUpdate((to, from, next) => {
-      console.log(to.path)
       updateNavVisibility(to.name);
       next();
     });

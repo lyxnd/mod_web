@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     printf(){
-      console.log('selectedOption2:'+this.selectedOption2)
+
     },
     openChooser(){
       this.showChooser=true;

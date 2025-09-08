@@ -3,17 +3,56 @@
     <router-link to="/mc/mods">Mods</router-link>
     <router-link to="/mc/contact">Contact</router-link>
     <router-link to="/mc/donate">...</router-link>
+
   </nav>
+
+  <el-select
+      v-model="language"
+      class="lang"
+      placeholder="中文"
+      size="large"
+      @change="updateLang"
+  >
+    <el-option
+        v-for="item in lan"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value"
+    />
+  </el-select>
 </template>
 
-<script>
-export default {
-  name: 'Navbar'
-};
+<script setup>
+import {getCurrentInstance, ref} from "vue";
+const { appContext } = getCurrentInstance();
+const globalVar = appContext.config.globalProperties.$globalVar;
+const language = ref('')
+const lan = [
+  {
+    value: 'zh_cn',
+    label: '中文',
+  },
+  {
+    value: 'en_us',
+    label: 'English',
+  },
+]
+const updateLang=(val)=>{
+  language.value=val
+  globalVar.lang=val
+}
 </script>
 
-<style >
+<style>
+.lang {
+  z-index: 10;
+  top: 10px;
+  right: 80px;
+  width: 80px !important;
+}
+
 .navbar {
+  width: 100%;
   height: 64px;
   position: fixed;
   top: 0;
@@ -32,6 +71,4 @@ export default {
   margin: 0 15px;
   text-decoration: none;
 }
-
-
 </style>

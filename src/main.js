@@ -1,5 +1,5 @@
 import './assets/main.css'
-import { createApp} from 'vue'
+import {createApp, reactive, ref} from 'vue'
 import App from './App.vue'
 import router from '../src/router/index.js';
 import ElementPlus  from 'element-plus';
@@ -10,6 +10,9 @@ const app=createApp(App);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
 }
+app.config.globalProperties.$globalVar = reactive({
+    lang:'zh_cn'
+})
 app.use(router)
 app.use(ElementPlus)
 app.mount('#app')

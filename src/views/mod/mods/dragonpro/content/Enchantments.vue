@@ -57,29 +57,17 @@
 </template>
 
 <script setup>
-import {ref, onMounted, watch, nextTick} from "vue";
+import {getCurrentInstance, onMounted, ref} from "vue";
+import {fetchEnchantments} from "@/util/file_reader.js";
+
 const enchantmentProperty = ref([]);
-const fetchData = async () => {
-  try {
-    const response = await fetch(`${import.meta.env.BASE_URL}assets/desc/enchantments.json`);
-    const jsonData = await response.json();
-    enchantmentProperty.value = jsonData.map(item => {
-      const key = Object.keys(item)[0];
-      return {
-        name: item[key].Name || item[key].name, // 适配不同的字段命名
-        approach: item[key].Approach || item[key].approach,
-        usage: item[key].Usage || item[key].usage,
-        sneak: item[key].Sneak || item[key].sneak,
-        erupt: item[key].Erupt || item[key].erupt,
-        attribute: item[key].Attribute || item[key].attribute,
-        additional: item[key].Additional || item[key].additional
-      };
-    });
-  } catch (error) {
-    console.error("加载 JSON 失败:", error);
-  }
-};
-onMounted(fetchData);
+const { appContext } = getCurrentInstance();
+const globalVar = appContext.config.globalProperties.$globalVar;
+onMounted(() => {
+  fetchEnchantments(globalVar.lang).then(result => {
+    enchantmentProperty.value = result.value;
+  });
+});
 </script>
 
 <style scoped>

@@ -1,0 +1,59 @@
+[
+  {
+    "Qi Attack": {
+      "name": "气攻击",
+      "icon": "/assets/icon/block/fusion.png",
+      "usage": "无操作",
+      "approach": "附魔台",
+      "additional": "无操作"
+    }
+  },
+  {
+    "mining_protection": {
+      "usage": "挖矿时降低方块转化率",
+      "additional": "风险越高，收益越大",
+      "name": "采矿保护",
+      "approach": "附魔台"
+    }
+  },
+  {
+    "xp_boost_enchantment": {
+      "usage": "使用副手的 xp_pool 物品提升经验掉落",
+      "additional": "相当不错的附魔",
+      "name": "经验加成",
+      "approach": "附魔台"
+    }
+  },
+  {
+    "qi_attack_enchantment": {
+      "usage": "",
+      "additional": "",
+      "name": "气攻击附魔",
+      "approach": "附魔台"
+    }
+  },
+  {
+    "attack_reward_enchantment": {
+      "usage": "",
+      "additional": "",
+      "name": "攻击奖励附魔",
+      "approach": "附魔台"
+    }
+  },
+  {
+    "qifield_enchantment": {
+      "usage": "",
+      "additional": "",
+      "name": "气场附魔",
+      "approach": "附魔台"
+    }
+  },
+  {
+    "pull_back_enchantment": {
+      "usage": "潜行并使用弓时将自己拉回",
+      "additional": "",
+      "name": "回拉附魔",
+      "approach": "附魔台"
+    }
+  }
+]

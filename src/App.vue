@@ -14,7 +14,7 @@ import Home from './components/index.vue'
   font-size: 20px !important;
   width: 300px !important;
   height: auto!important;
-  font-family: 楷体;
+  font-family: 楷体,serif;
   font-weight: bold !important;
 }
 

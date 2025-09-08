@@ -1,0 +1,472 @@
+[
+  {
+    "Shen du": {
+      "name": "圣主",
+      "icon": "/assets/icon/entity/shendu.png",
+      "max_hp": "1000",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "最邪恶的龙，焚烧一切阻挡它的人和物",
+      "attack_damage": "15",
+      "skill": [
+        "冻结周围所有生物",
+        "冻结周围所有生物"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ShenDuModel.gltf",
+      "images": [
+        "/assets/icon/entity/shendu.png",
+        "/assets/icon/entity/shendu_0.png",
+        "/assets/icon/entity/shendu_1.png",
+        "/assets/icon/entity/shendu_2.png",
+        "/assets/icon/entity/shendu_3.png",
+        "/assets/icon/entity/shendu_4.png"
+      ]
+    }
+  },
+  {
+    "Bai Tza": {
+      "name": "芭莎",
+      "icon": "/assets/icon/entity/baitza.png",
+      "max_hp": "700",
+      "speed": "0.4",
+      "armor": "6",
+      "description": "聪明但令人讨厌的蛇，干燥的土地将成为她的死亡之地",
+      "attack_damage": "15",
+      "skill": [
+        "吸收周围水分进行自我治疗"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/Bai_TzaModel.gltf",
+      "images": [
+        "/assets/icon/entity/baitza.png",
+        "/assets/icon/entity/baitza_0.png"
+      ]
+    }
+  },
+  {
+    "Xiao fung": {
+      "name": "啸风",
+      "icon": "/assets/icon/entity/xiaofung.png",
+      "max_hp": "900",
+      "speed": "0.3",
+      "armor": "8",
+      "description": "控制气进行攻击和飞行，不可触及",
+      "attack_damage": "15",
+      "skill": [
+        "吸收周围气体进行自我治疗"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/XiaoFungModel.gltf",
+      "images": [
+        "/assets/icon/entity/xiaofung.png",
+        "/assets/icon/entity/xiaofung_0.png"
+      ]
+    }
+  },
+  {
+    "Hsiwu": {
+      "name": "西木",
+      "icon": "/assets/icon/entity/hsiwu.png",
+      "max_hp": "600",
+      "speed": "1",
+      "armor": "5",
+      "description": "天空与太阳上的生物都将被吞噬",
+      "attack_damage": "8",
+      "skill": [
+        "连接世界与地狱，将所有怪物召至陆地"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/HsiWuModel.gltf",
+      "images": [
+        "/assets/icon/entity/hsiwu.png",
+        "/assets/icon/entity/hsiwu_0.png"
+      ]
+    }
+  },
+  {
+    "Pokong": {
+      "name": "波冈",
+      "icon": "/assets/icon/entity/pokong.png",
+      "max_hp": "1200",
+      "speed": "0.18",
+      "armor": "40",
+      "description": "最强韧，可以吸收所有伤害",
+      "attack_damage": "12",
+      "skill": [
+        "吸收周围方块进入身体，让自己更强韧"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/PoKongModel.gltf",
+      "images": [
+        "/assets/icon/entity/pokong.png",
+        "/assets/icon/entity/pokong_0.png"
+      ]
+    }
+  },
+  {
+    "Dai Gui": {
+      "name": "地魁",
+      "icon": "/assets/icon/entity/daigui.png",
+      "max_hp": "1000",
+      "speed": "0.28",
+      "armor": "12",
+      "description": "生活在地下无光的环境，使他非常暴怒",
+      "attack_damage": "15",
+      "skill": [
+        "召唤石腺破坏土地"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/DaiGuiModel.gltf",
+      "images": [
+        "/assets/icon/entity/daigui.png",
+        "/assets/icon/entity/daigui_0.png"
+      ]
+    }
+  },
+  {
+    "Tsolan": {
+      "name": "咒蓝",
+      "icon": "/assets/icon/entity/tsolan.png",
+      "max_hp": "700",
+      "speed": "0.6",
+      "armor": "8",
+      "description": "世界上最年长的孤独人，他最终如何变成怪物？",
+      "attack_damage": "10",
+      "skill": [
+        "召唤重力球进行攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/TsoLanModel.gltf",
+      "images": [
+        "/assets/icon/entity/tsolan.png",
+        "/assets/icon/entity/tsolan_0.png"
+      ]
+    }
+  },
+  {
+    "Tchangzu": {
+      "name": "中苏",
+      "icon": "/assets/icon/entity/tchangzu.png",
+      "max_hp": "900",
+      "speed": "0.28",
+      "armor": "9",
+      "description": "谋杀、毁坏所有坏东西与他有关，傲慢的恶魔，早该受到惩罚",
+      "attack_damage": "15",
+      "skill": [
+        "召唤雷电球进行攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/TchangZuModel.gltf",
+      "images": [
+        "/assets/icon/entity/tchangzu.png",
+        "/assets/icon/entity/tchangzu_0.png"
+      ]
+    }
+  },
+  {
+    "ShadowKhan": {
+      "name": "影武士1号",
+      "icon": "/assets/icon/entity/shadowkhan.png",
+      "max_hp": "80",
+      "speed": "0.6",
+      "armor": "0.6",
+      "description": "来自影之王国的杀手，没有感情，只会服从命令",
+      "attack_damage": "10",
+      "skill": [
+        "投掷飞镖攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ShadowkhanModel.gltf",
+      "images": [
+        "/assets/icon/entity/shadowkhan.png",
+        "/assets/icon/entity/shadowkhan_1.png"
+      ]
+    }
+  },
+  {
+    "SNP_Zombie": {
+      "name": "SNP僵尸",
+      "icon": "/assets/icon/entity/snp_zombie.png",
+      "max_hp": "30",
+      "speed": "0.23",
+      "armor": "3.0",
+      "description": "SNP僵尸，可以跳跃并射火球，可破坏方块",
+      "attack_damage": "5",
+      "skill": [
+        "射火球攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/snp_zombie.png"
+      ]
+    }
+  },
+  {
+    "lighting_skeleton": {
+      "name": "闪电骷髅",
+      "icon": "/assets/icon/entity/lighting_skeleton.png",
+      "max_hp": "20",
+      "speed": "0.25",
+      "armor": "3.0",
+      "description": "闪电骷髅，可以跳跃并射特殊箭",
+      "attack_damage": "5",
+      "skill": [
+        "射特殊箭攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/lighting_skeleton.png"
+      ]
+    }
+  },
+  {
+    "Jacker": {
+      "name": "杰克",
+      "icon": "/assets/icon/entity/jacker.png",
+      "max_hp": "60",
+      "speed": "0.6",
+      "armor": "0.7",
+      "description": "像铁傀儡一样的向导",
+      "attack_damage": "6",
+      "skill": [
+        "射箭攻击",
+        "射火球攻击"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/JackerModel.gltf",
+      "images": [
+        "/assets/icon/entity/jacker.png",
+        "/assets/icon/entity/jacker_1.png"
+      ]
+    }
+  },
+  {
+    "Mattery_Spider": {
+      "name": "流脓蜘蛛",
+      "icon": "/assets/icon/entity/mattery_spider.png",
+      "max_hp": "30",
+      "speed": "0.24",
+      "armor": "0.4",
+      "description": "非常丑陋且令人讨厌的蜘蛛",
+      "attack_damage": "3.6",
+      "skill": [
+        "召唤蛛网"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/mattery_spider.png"
+      ]
+    }
+  },
+  {
+    "Lost_Creeper": {
+      "name": "迷失苦力怕",
+      "icon": "/assets/icon/entity/lost_creeper.png",
+      "max_hp": "40",
+      "speed": "0.23",
+      "armor": "0.4",
+      "description": "带效果生成的苦力怕",
+      "attack_damage": "0.0",
+      "skill": [],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/lost_creeper.png"
+      ]
+    }
+  },
+  {
+    "Thief": {
+      "name": "偷子",
+      "icon": "/assets/icon/entity/thief.png",
+      "max_hp": "50",
+      "speed": "0.5",
+      "armor": "2.4",
+      "description": "会偷你贵重物品的小偷，小心！",
+      "attack_damage": "15",
+      "skill": [
+        "被攻击时隐身"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/ThiefModel.gltf",
+      "images": [
+        "/assets/icon/entity/thief.png"
+      ]
+    }
+  },
+  {
+    "Explosive_Blaze": {
+      "name": "爆裂烈焰人",
+      "icon": "/assets/icon/entity/explosive_blaze.png",
+      "max_hp": "60",
+      "speed": "0.25",
+      "armor": "2.4",
+      "description": "更强大的烈焰怪",
+      "attack_damage": "8",
+      "skill": [
+        "将你击退"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/explosive_blaze.png",
+        "/assets/icon/entity/explosive_blaze_1.png"
+      ]
+    }
+  },
+  {
+    "Wasted_Enderman": {
+      "name": "荒野末影人",
+      "icon": "/assets/icon/entity/wasted_enderman.png",
+      "max_hp": "75",
+      "speed": "0.33",
+      "armor": "2.4",
+      "description": "带来诅咒和不幸",
+      "attack_damage": "9",
+      "skill": [
+        "给予你诅咒效果"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/wasted_enderman.png"
+      ]
+    }
+  },
+  {
+    "Blood_Zombie": {
+      "name": "血尸",
+      "icon": "/assets/icon/entity/blood_zombie.png",
+      "max_hp": "45",
+      "speed": "0.23",
+      "armor": "3",
+      "description": "能激励周围的僵尸，使它们更强",
+      "attack_damage": "6",
+      "skill": [
+        "激励僵尸"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/blood_zombie.png"
+      ]
+    }
+  },
+  {
+    "Infectious_Zombie": {
+      "name": "感染僵尸",
+      "icon": "/assets/icon/entity/infectious_zombie.png",
+      "max_hp": "55",
+      "speed": "0.28",
+      "armor": "3",
+      "description": "会攻击附近大部分生物，击杀生物后可将其转化为僵尸。当数量达到5时，可被杀后复活；达到10时召唤僵尸傀儡",
+      "attack_damage": "8",
+      "skill": [
+        "感染生物",
+        "复活",
+        "召唤僵尸傀儡"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/infectious_zombie.png"
+      ]
+    }
+  },
+  {
+    "Golem_Zombie": {
+      "name": "傀儡僵尸",
+      "icon": "/assets/icon/entity/golem_zombie.png",
+      "max_hp": "150",
+      "speed": "0.23",
+      "armor": "12",
+      "description": "僵尸家族中最强者",
+      "attack_damage": "15",
+      "skill": [
+        "短时间降低目标速度（通过击打地面）"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/Revenge_GolemModel.gltf",
+      "images": [
+        "/assets/icon/entity/golem_zombie.png"
+      ]
+    }
+  },
+  {
+    "Wasted_Skeleton": {
+      "name": "荒野骷髅",
+      "icon": "/assets/icon/entity/wasted_skeleton.png",
+      "max_hp": "45",
+      "speed": "0.28",
+      "armor": "8",
+      "description": "感染方块并在该方块破坏后生成新的堕落骷髅",
+      "attack_damage": "8",
+      "skill": [
+        "感染方块",
+        "射击堕落骷髅头"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/wasted_skeleton.png"
+      ]
+    }
+  },
+  {
+    "Scientist_Zombie": {
+      "name": "科学家僵尸",
+      "icon": "/assets/icon/entity/scientist_zombie.png",
+      "max_hp": "85",
+      "speed": "0.23",
+      "armor": "3",
+      "description": "拥有大量物品（如金苹果、附魔金苹果、不死图腾），并可将僵尸传送至目标位置",
+      "attack_damage": "5",
+      "skill": [
+        "使用物品",
+        "传送僵尸"
+      ],
+      "additional": "无操作",
+      "hasModel": false,
+      "images": [
+        "/assets/icon/entity/scientist_zombie.png"
+      ]
+    }
+  },
+  {
+    "Dancer": {
+      "name": "舞者",
+      "icon": "/assets/icon/entity/dancer.png",
+      "max_hp": "70",
+      "speed": "0.4",
+      "armor": "3.5",
+      "description": "某种僵尸，但不会攻击你，可以表演舞蹈，如果你上传抽奖信息，还会召唤向导保护自己",
+      "attack_damage": "8",
+      "skill": [
+        "表演舞蹈",
+        "召唤向导保护自己"
+      ],
+      "additional": "无操作",
+      "hasModel": true,
+      "modelUrl": "/assets/model/DancerModel.gltf",
+      "images": [
+        "/assets/icon/entity/dancer.png"
+      ]
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Dream World",
+    "title": "Dream World & Mixed Dream World",
+    "subtitle": "",
+    "introduction": [
+      "When you are trying to sleep, pay attention, you will be teleported to one of the two dimensions at a low rate,",
+      "the first one is almost the same as the overworld, which means once you find a treasure, you can take the another one in this through dreaming.",
+      "The second is a mixed world,in another word, disordered. you will probably find end_city or ghost_tower here."
+    ],
+    "warning": [
+      "Without sheep talisman in offhand, during teleporting to the dimension you will leave some item and when you wake up, you'll take them back.",
+      "However, if you dead in the dimension you will lose the left items. Oh by the way, you will be given some items too. for it's a dream.",
+      "In some approach, you may keep the given items while leaving, But how?",
+      " So kill ender dragon to take the sheep talisman would be a better choice. or put items into chests and dig a hole to waiting for wake up."
+    ],
+    "detail":[
+
+    ]
+  },
+  {
+    "name": "Shadow Kingdom",
+    "title": "Empty and dark world",
+    "subtitle": "",
+    "introduction": [
+    ],
+    "warning": [
+    ],
+    "detail":[
+
+    ]
+  }
+]

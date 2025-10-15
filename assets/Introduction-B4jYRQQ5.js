@@ -1,0 +1,1 @@
+import{_ as e,c as o,a as c,b as n,d as r}from"./index-BGND0kB9.js";const s={},a={class:"content",style:{"overflow-y":"auto",height:"100vh",border:"2px solid red"}};function i(_,l){const t=r("el-backtop");return c(),o("div",a,[n(t,{target:".content",right:100,bottom:100,"visibility-height":50})])}const p=e(s,[["render",i]]);export{p as default};

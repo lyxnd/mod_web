@@ -15,6 +15,7 @@
       <el-tab-pane label="Effects" name="effects"/>
       <el-tab-pane label="Dimensions" name="dimensions"/>
       <el-tab-pane label="Events" name="events"/>
+      <el-tab-pane label="Strategy" name="strategy"/>
       <el-tab-pane label="Others" name="others"/>
     </el-tabs>
     <div class="page-component__scroll" style="overflow-y: auto;height:100vh">

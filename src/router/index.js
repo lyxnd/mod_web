@@ -67,6 +67,11 @@ const routes = [
                                         name: 'events'
                                     },
                                     {
+                                        path: 'strategy',
+                                        component: () => import('@/views/mod/mods/dragonpro/content/Strategy.vue'),
+                                        name: 'strategy'
+                                    },
+                                    {
                                         path: 'others',
                                         component: () => import('@/views/mod/mods/dragonpro/content/Others.vue'),
                                         name: 'others'

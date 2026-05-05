@@ -1,96 +1,66 @@
 <template>
-<div>
-  <div style="background: transparent !important;">
-    <el-table :data="blockProperty" style="width: 100%;background: transparent" height="100%" border
-              :header-cell-style="{ background: 'transparent' }" :cell-style="{ background: 'transparent' }" >
-      <el-table-column prop="name" label="Block" style="font-weight: bold;font-size: 30px">
-        <template #default="scope">
-          <el-tooltip
-              class="box-item"
-              effect="light"
-              :content="scope.row.name"
-              placement="top"
-          >
-            <span :id="'row-' + scope.row.name" class="tl-column">{{ scope.row.name }}</span>
-          </el-tooltip>
-        </template>
-      </el-table-column>
-      <el-table-column label="icon" >
-        <template #default="{ row }">
-          <img v-if="row.icon" :src="row.icon" alt="icon" style="width: 60px; height: 60px;" />
-        </template>
-      </el-table-column>
-      <el-table-column prop="approach" label="Approach"  >
-        <template #default="scope">
-          <el-tooltip
-              class="box-item"
-              effect="light"
-              :content="scope.row.approach"
-              placement="top"
-          >
-            <span  class="tl-column">{{ scope.row.approach }}</span>
-          </el-tooltip>
-        </template>
-      </el-table-column>
-      <el-table-column prop="usage" label="Usage" resizable>
-        <template #default="scope">
-          <el-tooltip
-              class="box-item"
-              effect="light"
-              :content="scope.row.usage"
-              placement="top"
-          >
-            <span  class="tl-column">{{ scope.row.usage }}</span>
-          </el-tooltip>
-        </template>
-      </el-table-column>
-      <el-table-column prop="additional" label="Additional" >
-        <template #default="scope">
-          <el-tooltip
-              class="box-item"
-              effect="light"
-              :content="scope.row.additional"
-              placement="top"
-          >
-            <span  class="tl-column">{{ scope.row.additional }}</span>
-          </el-tooltip>
-        </template>
-      </el-table-column>
-      <el-table-column label="Images" >
-        <template #default="{ row }">
-          <div class="image-list">
-            <el-image
-                v-for="(img, index) in row.additionalImg"
-                :key="index"
-                :src="img"
-                fit="cover"
-                class="thumbnail"
-                @click="openPreview(row.additionalImg)"
-            />
+  <div class="blocks-container">
+    <div v-if="!blockProperty || blockProperty.length === 0" class="empty-state">
+      <div class="empty-icon">⬛</div>
+      <p>Loading blocks…</p>
+    </div>
+    <div v-else class="blocks-grid">
+      <div class="block-card" v-for="block in blockProperty" :key="block.name" :id="'row-' + block.name">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <img v-if="block.icon" :src="block.icon" class="block-icon" alt="icon"/>
+            <div v-else class="icon-placeholder">⬛</div>
           </div>
-        </template>
-      </el-table-column>
-    </el-table>
+          <h3 class="block-name">{{ block.name }}</h3>
+        </div>
+        <div class="card-body">
+          <div class="prop-row" v-if="block.approach">
+            <span class="prop-label">Approach</span>
+            <span class="prop-value">{{ block.approach }}</span>
+          </div>
+          <div class="prop-row" v-if="block.usage">
+            <span class="prop-label">Usage</span>
+            <span class="prop-value">{{ block.usage }}</span>
+          </div>
+          <div class="prop-row" v-if="block.additional">
+            <span class="prop-label">Additional</span>
+            <span class="prop-value">{{ block.additional }}</span>
+          </div>
+        </div>
+        <div class="card-images" v-if="block.additionalImg && block.additionalImg.length">
+          <el-image
+            v-for="(img, index) in block.additionalImg"
+            :key="index"
+            :src="img"
+            fit="cover"
+            class="thumb"
+            @click="openPreview(block.additionalImg)"
+          />
+        </div>
+      </div>
+    </div>
+    <ImagePreviewDialog ref="previewDialog" :images="previewImages" />
+    <el-backtop :right="40" :bottom="40" />
   </div>
-  <ImagePreviewDialog ref="previewDialog" :images="previewImages" />
-  <el-backtop :right="40" :bottom="40" />
-</div>
 </template>
 
 <script setup>
-import {ref, onMounted, watch, nextTick, getCurrentInstance} from "vue";
+import { ref, onMounted, getCurrentInstance } from "vue";
 import ImagePreviewDialog from "@/components/ImagePreviewDialog.vue";
-import {fetchBlocks} from "@/util/file_reader.js";
-const previewDialog = ref(null); // 预览组件引用
-const previewImages = ref([]); // 当前要预览的图片
+import { fetchBlocks } from "@/util/file_reader.js";
+
+const blockProperty = ref([]);
+const previewDialog = ref(null);
+const previewImages = ref([]);
 
 const openPreview = (images) => {
-  previewImages.value = images; // 设置当前要预览的图片
-  previewDialog.value.openDialog(); // 调用子组件的方法打开弹窗
+  previewImages.value = images;
+  previewDialog.value.openDialog();
 };
-const blockProperty = ref([]);
+
 const { appContext } = getCurrentInstance();
 const globalVar = appContext.config.globalProperties.$globalVar;
+
 onMounted(() => {
   fetchBlocks(globalVar.lang).then(result => {
     blockProperty.value = result.value;
@@ -99,28 +69,149 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.el-table{
-  background-color:transparent;
+.blocks-container {
+  padding: 8px 4px;
 }
-:deep(.el-table tr){
-  background-color:transparent;
+
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
 }
-:deep(.el-table th) {
-  font-family: "Microsoft YaHei", sans-serif;
-  font-weight: bolder;
-  font-size: 18px;
-  color: blue;
-  background-color:transparent;
+
+.block-card {
+  position: relative;
+  background:
+      radial-gradient(circle at top right, rgba(109, 40, 217, 0.05), transparent 50%),
+      rgba(255, 255, 255, 0.55);
+  border: 1.5px solid rgba(91, 33, 182, 0.22);
+  border-radius: 12px;
+  padding: 14px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
 }
-:deep(.el-table td) {
-  font-family: "Microsoft YaHei", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  background-color:transparent;
-  color: black;
+
+.block-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #6d28d9, #b45309);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
-img {
+
+.block-card:hover {
+  box-shadow: 0 8px 22px rgba(91, 33, 182, 0.15);
+  transform: translateY(-3px);
+  border-color: rgba(91, 33, 182, 0.45);
+}
+
+.block-card:hover::before { opacity: 1; }
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.40);
+  border: 1.5px dashed rgba(109, 40, 217, 0.20);
+  border-radius: 12px;
+  color: #6b7280;
+}
+
+.empty-icon { font-size: 42px; margin-bottom: 10px; }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(91, 33, 182, 0.15);
+}
+
+.icon-wrapper {
+  flex-shrink: 0;
+}
+
+.block-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  border-radius: 6px;
+  background: rgba(91, 33, 182, 0.07);
+  padding: 4px;
   display: block;
-  margin: auto;
+}
+
+.icon-placeholder {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(91, 33, 182, 0.07);
+  border-radius: 6px;
+  font-size: 20px;
+  color: #9ca3af;
+}
+
+.block-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3b0764;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prop-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.prop-label {
+  flex-shrink: 0;
+  font-weight: bold;
+  color: #5b21b6;
+  background: rgba(91, 33, 182, 0.08);
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+  min-width: 62px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.prop-value {
+  color: #374151;
+  font-size: 13px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(91, 33, 182, 0.1);
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  object-fit: cover;
 }
 </style>

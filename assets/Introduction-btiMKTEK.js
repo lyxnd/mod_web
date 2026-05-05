@@ -1,0 +1,1 @@
+import{_ as e,c as o,a as c,b as n,h as r}from"./index-Doy4ifVn.js";const s={},a={class:"content",style:{"overflow-y":"auto",height:"100vh",border:"2px solid red"}};function i(_,l){const t=r("el-backtop");return c(),o("div",a,[n(t,{target:".content",right:100,bottom:100,"visibility-height":50})])}const h=e(s,[["render",i]]);export{h as default};
